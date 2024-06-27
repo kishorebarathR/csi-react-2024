@@ -1,9 +1,12 @@
 import React from 'react'
+import AwardsBanner from './AwardsBanner'
+import CreteriaEligibilty from './CreteriaEligibilty'
 
 const index = () => {
     return (
         <>
-            Csi 2024 Awards
+            <AwardsBanner />
+            <CreteriaEligibilty />
         </>
     )
 }
