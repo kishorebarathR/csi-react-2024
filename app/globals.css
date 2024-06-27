@@ -16,3 +16,46 @@
   }
 }
 
+* , body {
+  background: #E6D9EB;
+}
+
+.font16px {
+  font-size:16px;
+}
+
+.font18px {
+  font-size:18px;
+}
+
+.font20px {
+  font-size:20px;
+}
+
+.font24px {
+  font-size:24px;
+}
+
+.font28px {
+  font-size:28px;
+}
+
+.font32px {
+  font-size:32px;
+}
+
+.font40px {
+  font-size:40px;
+}
+
+.text-purple {
+  color:#7e3f98;
+}
+
+.bg-purple {
+  background: #7e3f98;
+}
+
+.bg-yellow {
+  background: #f3d479;
+}
