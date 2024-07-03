@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react"
+import Footerpage from "./Footerpage"
 
 const index = () => {
-    return (
-        <div>
-
-        </div>
-    )
+  return (
+    <div>
+      <Footerpage />
+    </div>
+  )
 }
 
 export default index

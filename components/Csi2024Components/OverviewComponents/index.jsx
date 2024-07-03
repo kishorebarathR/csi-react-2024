@@ -1,9 +1,10 @@
 import React from 'react'
+import Overviewpage from './Overviewpage'
 
 const index = () => {
     return (
         <>
-            Csi2024 OverView
+           <Overviewpage/>
         </>
     )
 }

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react"
+import AwardsPage from "./Awardspage"
 
 const index = () => {
-    return (
-        <>
-            Csi 2024 Awards
-        </>
-    )
+  return (
+    <div>
+      <AwardsPage />
+    </div>
+  )
 }
 
 export default index
