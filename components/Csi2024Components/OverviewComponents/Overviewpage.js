@@ -1,25 +1,25 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
+import React from "react"
+// import React, { useState, useEffect } from "react"
 import Image from "next/image"
+ const Overviewpage = () => {
+//   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
 
-const Overviewpage = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+//   const hoverTextStyleBlr = {
+//     transform: isMobile ? "rotate(90deg)" : "rotate(0deg)",
+//   }
 
-  const hoverTextStyleBlr = {
-    transform: isMobile ? "rotate(90deg)" : "rotate(0deg)",
-  }
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth < 768)
+//     }
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
+//     window.addEventListener("resize", handleResize)
+//     return () => {
+//       window.removeEventListener("resize", handleResize)
+//     }
+//   }, [])
 
   return (
     <div>
@@ -377,7 +377,8 @@ const Overviewpage = () => {
             />
           </div>
 
-          <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}>
+          {/* <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}> */}
+          <div className="flex md:mx-4 text-center" >
             <Image
               className="w-10 h-10 mx-auto "
               src="/images/csi_2024/Arrow.png"
@@ -396,7 +397,8 @@ const Overviewpage = () => {
             />
           </div>
 
-          <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}>
+          {/* <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}> */}
+          <div className="flex md:mx-4 text-center" >
             <Image
               className="w-10 h-10 mx-auto"
               src="/images/csi_2024/Arrow.png"
@@ -421,7 +423,10 @@ const Overviewpage = () => {
           <p className="text-xl">
             Stakeholder consensus and commitments with a focus on
             <p className="pb-0"></p>
-            <span className="font-semibold">&apos;Connect, Solve&apos;</span> and
+            <span className="font-semibold">
+              &apos;Connect, Solve&apos;
+            </span>
+            and
             <span className="font-semibold">&apos;Catalyse&apos;</span> through
           </p>
         </div>
@@ -521,7 +526,6 @@ const Overviewpage = () => {
           <div className="text-md ml-4">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-              
                 Government:
               </span>
               Gain insights for policy enhancements and implementation
@@ -544,7 +548,6 @@ const Overviewpage = () => {
           <div className="text-md ml-5">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-              
                 Research and Policy Organisations / Academia:
               </span>
               Exchange knowledge, disseminate insights, and uncover business
@@ -566,7 +569,6 @@ const Overviewpage = () => {
           <div className="text-md ml-5">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-                
                 Service Providers & Domain Experts:
               </span>
               Unveil your products/services and explore new frontiers for

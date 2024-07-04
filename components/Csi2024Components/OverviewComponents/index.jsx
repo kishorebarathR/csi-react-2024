@@ -1,12 +1,12 @@
-import React from 'react'
-import Overviewpage from './Overviewpage'
+import React from "react"
+import Overviewpage from "./Overviewpage"
 
 const index = () => {
-    return (
-        <>
-           <Overviewpage/>
-        </>
-    )
+  return (
+    <>
+      <Overviewpage />
+    </>
+  )
 }
 
 export default index

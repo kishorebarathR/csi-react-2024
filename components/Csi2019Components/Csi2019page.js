@@ -117,7 +117,7 @@ const Csi2019page = () => {
             <div className="w-full flex justify-center items-center">
               <Image
                 className="object-cover w-full h-full"
-                src="/images/csi-2019/csi-img1.png"
+                src="/images/csi_2019/csi-img1.png"
                 alt="image description"
                 height={400}
                 width={400}
@@ -129,7 +129,7 @@ const Csi2019page = () => {
                 <div className="w-full flex lg:justify-end lg:ms-24">
                   <Image
                     className="w-40 lg:-mt-32"
-                    src="/images/csi-2019/csi-img2.png"
+                    src="/images/csi_2019/csi-img2.png"
                     alt="image description"
                     height={400}
                     width={400}
@@ -157,7 +157,7 @@ const Csi2019page = () => {
                 <div className="w-full">
                   <Image
                     className="w-40 lg:-ms-28 px-2 lg:-mt-24"
-                    src="/images/csi-2019/csi-img3.png"
+                    src="/images/csi_2019/csi-img3.png"
                     alt="image description"
                     height={400}
                     width={400}
@@ -181,7 +181,7 @@ const Csi2019page = () => {
             <div className="w-full">
               <Image
                 className=" object-cover w-full h-full"
-                src="/images/csi-2019/csi-img4.png"
+                src="/images/csi_2019/csi-img4.png"
                 alt="image description"
                 height={400}
                 width={400}
@@ -195,7 +195,7 @@ const Csi2019page = () => {
             <div className="w-full flex justify-center items-center">
               <Image
                 className=" object-cover w-full h-full"
-                src="/images/csi-2019/csi-img5.png"
+                src="/images/csi_2019/csi-img5.png"
                 alt="image description"
                 height={400}
                 width={400}
@@ -207,7 +207,7 @@ const Csi2019page = () => {
                 <div className="w-full flex lg:justify-end lg:ms-28">
                   <Image
                     className="lg:ms-44 px-2 w-40 lg:-mt-24"
-                    src="/images/csi-2019/csi-img6.png"
+                    src="/images/csi_2019/csi-img6.png"
                     alt="image description"
                     height={400}
                     width={400}
@@ -235,7 +235,7 @@ const Csi2019page = () => {
                 <div className="w-full">
                   <Image
                     className="w-40 lg:-ms-28 px-2 lg:-mt-24"
-                    src="/images/csi-2019/csi-img7.png"
+                    src="/images/csi_2019/csi-img7.png"
                     alt="image description"
                     height={400}
                     width={400}
@@ -259,7 +259,7 @@ const Csi2019page = () => {
             <div className="w-full flex justify-center items-center">
               <Image
                 className="object-cover w-full h-full"
-                src="/images/csi-2019/csi-img8.png"
+                src="/images/csi_2019/csi-img8.png"
                 alt="image description"
                 height={400}
                 width={400}
@@ -273,7 +273,7 @@ const Csi2019page = () => {
             <div className="w-full">
               <Image
                 className=" object-cover w-full h-full"
-                src="/images/csi-2019/csi-img9.png"
+                src="/images/csi_2019/csi-img9.png"
                 alt="image description"
                 height={400}
                 width={400}
@@ -285,7 +285,7 @@ const Csi2019page = () => {
                 <div className="w-full flex lg:justify-end lg:ms-20 ">
                   <Image
                     className="lg:ms-52 px-2 w-40 lg:-mt-24"
-                    src="/images/csi-2019/csi-img10.png"
+                    src="/images/csi_2019/csi-img10.png"
                     alt="image description"
                     height={400}
                     width={400}
