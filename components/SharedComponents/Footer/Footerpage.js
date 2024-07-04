@@ -13,12 +13,15 @@ const Footerpage = () => {
               src="/images/logo-light (1).png"
               alt="image description"
               height={200}
-              width={800}
+              width={1000}
             />
           </div>
           <div className="flex items-center justify-center h-full text-white text-center md:text-right md:mt-0">
-            <a href="mailto:csi@catalysts.org" className="hover:text-green-600 text-md lg:ms-44">
-              csi@catalysts.org
+            <a
+              href="mailto:csi@catalysts.org"
+              className="hover:text-green-600 text-md lg:ms-44"
+            >
+              csi2014@catalysts.org
             </a>
           </div>
         </div>
@@ -53,22 +56,25 @@ const Footerpage = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-full md:w-auto mb-4 md:mb-0">
+                <div className="w-full md:w-auto mb-4 md:mb-0 lg:mt-10">
                   <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                     <li className="violet">
-                      <p className="block py-2 px-3 text-md text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600" aria-current="page">
+                      <p
+                        className="block py-2 px-3 mt-1 text-md text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        aria-current="page"
+                      >
                         CSI 2024
                       </p>
                       <Link
                         href="csi-2024"
-                        className="block py-2 px-3 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        className="block py-2 px-3 lg:ms-1 mt-1 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
                         aria-current="page"
                       >
                         Overview
                       </Link>
                       <Link
                         href="csi-awards-2024"
-                        className="block py-2 px-3 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        className="block py-2 px-3 lg:ms-2 mt-1 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
                         aria-current="page"
                       >
                         Awards

@@ -23,7 +23,7 @@ const Overviewpage = () => {
 
   return (
     <div>
-      <div className="relative bg-[url('/images/csi_2024/CSI_2024_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[180vh]">
+      <div className="relative bg-[url('/images/csi_2024/CSI_2024_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[180vh] custom-container">
         <div className=" pt-5 top-[18%] ">
           <div className="w-full h-full    lg:pt-44 lg:absolute top-0 start-0  ">
             <div className="lg:px-80 lg:pt-10">
@@ -47,7 +47,7 @@ const Overviewpage = () => {
             </div>
 
             <div className="lg:flex justify-center ">
-              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 justify-center items-center text-center ">
+              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-6 justify-center items-center text-center ">
                 <div>
                   <Image
                     className="w-10 h-full"
