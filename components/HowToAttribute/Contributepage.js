@@ -56,7 +56,7 @@ const Contributepage = () => {
       </div>
       </div>
 
-      <div className="text-center mt-10">
+      <div className="text-center mt-11">
         <a
           href="interest-form"
           className="focus:outline-none text-violet-600 bg-[#F3D479] hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 me-2 mb-14 dark:focus:ring-yellow-900"

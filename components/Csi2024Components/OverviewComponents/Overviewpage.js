@@ -47,7 +47,7 @@ const Overviewpage = () => {
             </div>
 
             <div className="lg:flex justify-center ">
-              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-7 justify-center items-center text-center ">
+              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-6 justify-center items-center text-center ">
                 <div>
                   <Image
                     className="w-10 h-full"
@@ -104,7 +104,7 @@ const Overviewpage = () => {
           </h1>
         </div>
 
-        <div class="lg:flex pt-10 lg:px-10 ">
+        <div className="lg:flex pt-10 lg:px-10 ">
           <div class="flex-1  p-4">
             <div className="flex justify-center items-center ">
               <Image
@@ -119,7 +119,7 @@ const Overviewpage = () => {
               Collaborative<p className="mb-0"></p> Problem-Solving
             </div>
           </div>
-          <div class="flex-1 p-4">
+          <div className="flex-1 p-4">
             <div className="flex justify-center items-center">
               <Image
                 className=" w-32"
@@ -134,7 +134,7 @@ const Overviewpage = () => {
               Learning
             </div>
           </div>
-          <div class="flex-1  p-4">
+          <div className="flex-1  p-4">
             <div className="flex justify-center items-center ">
               <Image
                 className=" w-32"
@@ -148,7 +148,7 @@ const Overviewpage = () => {
               Resource<p className="mb-0"></p> Mobilisation
             </div>
           </div>
-          <div class="flex-1 p-4">
+          <div className="flex-1 p-4">
             <div className=" flex justify-center items-center ">
               <Image
                 className=" w-32"
@@ -521,8 +521,8 @@ const Overviewpage = () => {
           <div className="text-md ml-4">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-                {" "}
-                Government:{" "}
+              
+                Government:
               </span>
               Gain insights for policy enhancements and implementation
               strategies for SDGs. Discover potential partners and scalable
@@ -544,9 +544,9 @@ const Overviewpage = () => {
           <div className="text-md ml-5">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-                {" "}
+              
                 Research and Policy Organisations / Academia:
-              </span>{" "}
+              </span>
               Exchange knowledge, disseminate insights, and uncover business
               opportunities.
             </p>
@@ -566,9 +566,9 @@ const Overviewpage = () => {
           <div className="text-md ml-5">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-                {" "}
+                
                 Service Providers & Domain Experts:
-              </span>{" "}
+              </span>
               Unveil your products/services and explore new frontiers for
               engagement.
             </p>
