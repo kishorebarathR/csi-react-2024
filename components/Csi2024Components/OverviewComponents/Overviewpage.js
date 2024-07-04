@@ -47,7 +47,7 @@ const Overviewpage = () => {
             </div>
 
             <div className="lg:flex justify-center ">
-              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-6 justify-center items-center text-center ">
+              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-7 justify-center items-center text-center ">
                 <div>
                   <Image
                     className="w-10 h-full"
@@ -163,8 +163,7 @@ const Overviewpage = () => {
             </div>
           </div>
         </div>
-       
-       
+
         <p className="text-center pt-10 font20px  lg:px-24 ">
           By sparking innovation and boosting investments, we can embark on an
           inclusive<p className="mb-0"></p>
@@ -420,10 +419,10 @@ const Overviewpage = () => {
 
         <div className="text-center py-5">
           <p className="text-xl">
-            Stakeholder consensus and commitments with a focus on{" "}
+            Stakeholder consensus and commitments with a focus on
             <p className="pb-0"></p>
-            <span className="font-semibold">'Connect, Solve'</span> and
-            <span className="font-semibold">'Catalyse'</span> through
+            <span className="font-semibold">&apos;Connect, Solve&apos;</span> and
+            <span className="font-semibold">&apos;Catalyse&apos;</span> through
           </p>
         </div>
 
@@ -499,7 +498,6 @@ const Overviewpage = () => {
           <div className="text-md ml-4">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
-               
                 Funders, corporates and investors:
               </span>
               Connect with sectoral leaders, practitioners, and innovators to
@@ -612,28 +610,33 @@ const Overviewpage = () => {
           </div>
 
           <div className="lg:flex flex-col lg:flex-row justify-center items-center pt-16 lg:space-x-5">
-  <div className="w-60 lg:w-auto lg:flex-shrink-0 order-1 lg:order-2">
-    <Image
-      className="w-52 h-full"
-      src="/images/csi_2024/Icon 20.svg"
-      alt="Implementation-Fidelity and Quality"
-      height={400}
-      width={400}
-    />
-  </div>
-  <div className="text-md mt-5 lg:mt-0 order-2 lg:order-1">
-    <p className="text-3xl font-medium text-[#7E3F98] pt-8 pb-3">
-      Implementation-Fidelity and Quality
-    </p>
-    <p className="p-1">
-      Navigating the gap between envisioned outcomes and reality is a common challenge in social impact. While research emphasises implementation fidelity, its practicality in addressing real-world problems requires further examination, especially regarding the balance between scale and quality.
-    </p>
-    <p>
-      Join us to explore quality care’s impact on maternal and neonatal mortality, health outcome measurement, design adaptation, technology’s role, and data-driven decisions.
-    </p>
-  </div>
-</div>
-
+            <div className="w-60 lg:w-auto lg:flex-shrink-0 order-1 lg:order-2">
+              <Image
+                className="w-52 h-full"
+                src="/images/csi_2024/Icon 20.svg"
+                alt="Implementation-Fidelity and Quality"
+                height={400}
+                width={400}
+              />
+            </div>
+            <div className="text-md mt-5 lg:mt-0 order-2 lg:order-1">
+              <p className="text-3xl font-medium text-[#7E3F98] pt-8 pb-3">
+                Implementation-Fidelity and Quality
+              </p>
+              <p className="p-1">
+                Navigating the gap between envisioned outcomes and reality is a
+                common challenge in social impact. While research emphasises
+                implementation fidelity, its practicality in addressing
+                real-world problems requires further examination, especially
+                regarding the balance between scale and quality.
+              </p>
+              <p>
+                Join us to explore quality care’s impact on maternal and
+                neonatal mortality, health outcome measurement, design
+                adaptation, technology’s role, and data-driven decisions.
+              </p>
+            </div>
+          </div>
 
           <div className="lg:flex flex-col lg:flex-row justify-center items-center pt-16 lg:space-x-5 pb-8">
             <div className="w-60 lg:w-auto lg:flex-shrink-0">
