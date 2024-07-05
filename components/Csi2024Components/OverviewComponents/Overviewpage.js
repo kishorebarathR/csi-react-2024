@@ -3,24 +3,8 @@
 import React from "react"
 // import React, { useState, useEffect } from "react"
 import Image from "next/image"
+import Overview from "../../../utils/data"
 const Overviewpage = () => {
-  //   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
-
-  //   const hoverTextStyleBlr = {
-  //     transform: isMobile ? "rotate(90deg)" : "rotate(0deg)",
-  //   }
-
-  //   useEffect(() => {
-  //     const handleResize = () => {
-  //       setIsMobile(window.innerWidth < 768)
-  //     }
-
-  //     window.addEventListener("resize", handleResize)
-  //     return () => {
-  //       window.removeEventListener("resize", handleResize)
-  //     }
-  //   }, [])
-
   return (
     <div>
       <div className="relative bg-[url('/images/csi_2024/CSI_2024_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[180vh] custom-container">
@@ -28,7 +12,7 @@ const Overviewpage = () => {
           <div className="w-full h-full    lg:pt-44 lg:absolute top-0 start-0  ">
             <div className="lg:px-80 lg:pt-10">
               <Image
-                className=" object-cover w-full h-full "
+                className=" object-cover w-full h-full px-5"
                 src="/images/csi_2024/Catalysing_Social_Impact_2024_full.png"
                 alt="image description"
                 height={400}
@@ -46,31 +30,33 @@ const Overviewpage = () => {
               />
             </div>
 
-            <div className="lg:flex justify-center ">
-              <div className="flex  rounded-full bg-[#F5D47B] mt-16 p-2 lg:px-6 justify-center items-center text-center ">
-                <div>
-                  <Image
-                    className="w-10 h-full"
-                    src="/images/csi_2024/calander_logo.png"
-                    alt="image description"
-                    height={400}
-                    width={400}
-                  />
-                </div>
-                <div className="text-md font-medium border-r-2 border-red-800 pr-2  ">
-                  <p className="p-1 ">August 1 and 2, 2024</p>
-                </div>
-                <div>
-                  <Image
-                    className="w-10 h-full"
-                    src="/images/csi_2024/location_logo.png"
-                    alt="image description"
-                    height={400}
-                    width={400}
-                  />
-                </div>
-                <div className="text-md font-medium">
-                  <p className="">New Delhi, NCR</p>
+            <div className="">
+              <div className="flex justify-center items-center">
+                <div className="flex rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 justify-center items-center text-center">
+                  <div>
+                    <Image
+                      className="w-10 h-full p-1"
+                      src="/images/csi_2024/calander_logo.png"
+                      alt="image description"
+                      height={400}
+                      width={400}
+                    />
+                  </div>
+                  <div className="text-md font-medium border-r-2 border-red-800 pr-2 pe-3">
+                    <p className="p-1 sm:text-sm">August 1 and 2, 2024</p>
+                  </div>
+                  <div>
+                    <Image
+                      className="w-10 h-full p-1"
+                      src="/images/csi_2024/location_logo.png"
+                      alt="image description"
+                      height={400}
+                      width={400}
+                    />
+                  </div>
+                  <div className="text-md font-medium p-1">
+                    <p className="sm:text-sm">New Delhi, NCR</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,86 +78,44 @@ const Overviewpage = () => {
       </div>
 
       <div className=" bg-white pb-36">
-        <div>
-          <h1 className="text-2xl text-center pt-10 lg:px-14">
-            <span className="text-3xl font-normal ">
-              Catalysing Social Impact
-            </span>
-            <span className="text-3xl text-[#7E3F98] text-center ">
-              is all about celebrating India’s achievements<br></br> and finding
+        <div className="container mx-auto lg:p-0   p-4">
+          <h1 className="text-3xl text-center pt-10 lg:px-14">
+            Catalysing Social Impact{" "}
+            <span className=" text-[#7E3F98] text-center ">
+              is all about celebrating India’s achievements and finding
               meaningful cross-sectoral opportunities
             </span>
           </h1>
+        
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:flex justify-center pt-10 lg:px-10 lg:gap-10">
+          {Overview.map((items, index) => (
+            <div key={index} className="p-4">
+              <div className="flex justify-center items-center">
+                <Image
+                  className="w-32 h-auto"
+                  src={items.image}
+                  alt=""
+                  height={400}
+                  width={400}
+                />
+              </div>
+              <div className="text-xl font-light text-center pt-5">
+                <p className="text-center">{items.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="lg:flex pt-10 lg:px-10 ">
-          <div class="flex-1  p-4">
-            <div className="flex justify-center items-center ">
-              <Image
-                className=" w-32"
-                src="/images/csi_2024/Collaborative_Problem_Solving.svg"
-                alt="image description"
-                height={400}
-                width={400}
-              />
-            </div>
-            <div className="text-xl font-light text-center pt-5">
-              Collaborative<p className="mb-0"></p> Problem-Solving
-            </div>
-          </div>
-          <div className="flex-1 p-4">
-            <div className="flex justify-center items-center">
-              <Image
-                className=" w-32"
-                src="/images/csi_2024/Icon 02.svg"
-                alt="image description"
-                height={400}
-                width={400}
-              />
-            </div>
-            <div className="text-xl font-light text-center pt-5">
-              Knowledge Sharing and<p className="mb-0"></p>
-              Learning
-            </div>
-          </div>
-          <div className="flex-1  p-4">
-            <div className="flex justify-center items-center ">
-              <Image
-                className=" w-32"
-                src="/images/csi_2024/Icon 03.svg"
-                alt="image description"
-                height={400}
-                width={400}
-              />
-            </div>
-            <div className="text-xl font-light text-center pt-5">
-              Resource<p className="mb-0"></p> Mobilisation
-            </div>
-          </div>
-          <div className="flex-1 p-4">
-            <div className=" flex justify-center items-center ">
-              <Image
-                className=" w-32"
-                src="/images/csi_2024/Icon 04.svg"
-                alt="image description"
-                height={400}
-                width={400}
-              />
-            </div>
-            <div className="text-xl font-light text-center pt-5">
-              Impactful<p className="mb-0"></p> Partnerships
-            </div>
-          </div>
-        </div>
-
-        <p className="text-center pt-10 font20px  lg:px-24 ">
+        <p className="text-center pt-10  lg:px-64 lg:text-xl text-2xl">
           By sparking innovation and boosting investments, we can embark on an
-          inclusive<p className="mb-0"></p>
-          and transformative journey towards the visionary goal of India@2047.
+          inclusive and transformative journey towards the visionary goal of
+          India@2047.
         </p>
+        </div>
       </div>
 
-      <div className="  bg-[url('/images/csi_2024/purple_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[115vh]">
+      <div className="pb-5 bg-[url('/images/csi_2024/purple_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-a py-10">
         <div className=" flex justify-center items-center ">
           <Image
             className=" w-44 -mt-24"
@@ -206,10 +150,10 @@ const Overviewpage = () => {
                   src="/images/csi_2024/Supercharge_Collective_Action.png"
                   alt="image description"
                   height={200}
-                  width={200}
+                  width={600}
                 />
               </div>
-              <div className=" ">
+              <div className=" flex justify-center items-center">
                 <p className="text-white">
                   <span className="text-[#FFC107]">
                     Supercharge Collective Action
@@ -227,7 +171,7 @@ const Overviewpage = () => {
               src="/images/csi_2024/people-2.svg"
               alt="image description"
               height={200}
-              width={200}
+              width={600}
             />
             <div className=" lg:flex  pt-5 px-10">
               <div className="">
@@ -239,7 +183,7 @@ const Overviewpage = () => {
                   width={200}
                 />
               </div>
-              <div className="  ">
+              <div className=" flex justify-center items-center">
                 <p className="text-white">
                   <span className="text-[#FFC107]">
                     Engage in Insightful Discussions{" "}
@@ -262,7 +206,7 @@ const Overviewpage = () => {
         </div>
       </div>
 
-      <div className="  py-5 bg-[url('/images/csi_2024/Mask.png')] bg-cover bg-center h-full w-full flex items-center justify-center ">
+      <div className="pb-5 bg-[url('/images/csi_2024/Mask.png')] bg-cover bg-center h-full w-full flex items-center justify-center ">
         <div className=" pb-5  px-5">
           <div className="text-center pt-10   ">
             <p className="text-4xl font-medium text-[#7E3F98] py-2 ">
@@ -272,6 +216,7 @@ const Overviewpage = () => {
               At CSI 2024, we’re breaking the mould of traditional conferences.
             </p>
           </div>
+          <div className="container">
           <div className="lg:flex pt-16 lg:space-x-4 lg:px-14">
             <div className="flex-1  rounded-lg bg-white p-5">
               <Image
@@ -346,6 +291,9 @@ const Overviewpage = () => {
               </p>
             </div>
           </div>
+          </div>
+
+
           <p className=" pt-14 text-2xl text-center   font-medium">
             <span className="font-medium">
               CSI 2024 is not just another conference—it’s an exciting
@@ -359,17 +307,17 @@ const Overviewpage = () => {
         </div>
       </div>
 
-      <div className="  bg-[url('/images/csi_2024/EXPECTED_OUTCOMES_banner.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[95vh]">
+      <div className="  bg-[url('/images/csi_2024/EXPECTED_OUTCOMES_banner.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-auto">
         <div className="text-center py-10 md:pt-20">
           <p className="text-3xl text-[#7E3F98] font-semibold">
             EXPECTED OUTCOMES
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-around gap-4 px-4   md:px-2 ">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-4 px-4   md:px-2 container mx-auto ">
           <div className="flex-1 md:mr-4">
             <Image
-              className="w-full h-36 lg:px-10"
+              className="w-full h-auto lg:px-10"
               src="/images/csi_2024/contact.png"
               alt="image description"
               height={200}
@@ -377,19 +325,22 @@ const Overviewpage = () => {
             />
           </div>
 
-          
           <div className="flex md:mx-4 text-center">
             <div className="w-10 h-10 mx-auto">
               {/* Mobile view rotation */}
-              <img
+              <Image
                 src="/images/csi_2024/Arrow.png"
                 alt="image description"
+                width={100}
+                height={100}
                 className="w-full h-full md:hidden transform rotate-90"
               />
               {/* Desktop view (no rotation) */}
-              <img
+              <Image
                 src="/images/csi_2024/Arrow.png"
                 alt="image description"
+                width={400}
+                height={100}
                 className="w-full h-full hidden md:block"
               />
             </div>
@@ -397,7 +348,7 @@ const Overviewpage = () => {
 
           <div className="flex-1 md:mx-4">
             <Image
-              className="w-full h-36 lg:px-10"
+              className="w-full h-auto lg:px-10"
               src="/images/csi_2024/solve.png"
               alt="image description"
               height={200}
@@ -405,19 +356,22 @@ const Overviewpage = () => {
             />
           </div>
 
-            
           <div className="flex md:mx-4 text-center">
             <div className="w-10 h-10 mx-auto">
               {/* Mobile view rotation */}
-              <img
+              <Image
                 src="/images/csi_2024/Arrow.png"
                 alt="image description"
+                width={100}
+                height={100}
                 className="w-full h-full md:hidden transform rotate-90"
               />
               {/* Desktop view (no rotation) */}
-              <img
+              <Image
                 src="/images/csi_2024/Arrow.png"
                 alt="image description"
+                width={400}
+                height={200}
                 className="w-full h-full hidden md:block"
               />
             </div>
@@ -425,7 +379,7 @@ const Overviewpage = () => {
 
           <div className="flex-1 md:ml-4">
             <Image
-              className="w-full h-36 lg:px-10"
+              className="w-full h-auto lg:px-10"
               src="/images/csi_2024/contact.png"
               alt="image description"
               height={200}
@@ -479,7 +433,7 @@ const Overviewpage = () => {
         </p>
       </div>
 
-      <div className="bg-white lg:flex flex-wrap lg:flex-nowrap lg:px-44 gap-8 space-y-2 pb-8">
+      <div className="bg-white lg:flex flex-wrap lg:flex-nowrap lg:px-44 gap-8 space-y-2 pb-8 ">
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1 ">
           <div className="w-44 lg:w-auto lg:flex-shrink-0">
             <Image
