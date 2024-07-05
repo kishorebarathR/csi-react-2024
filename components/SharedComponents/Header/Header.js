@@ -35,7 +35,7 @@ const Header = () => {
           onClick={() => handleLinkClick(0)}
         >
           <Image
-            className="w-full lg:h-[58px] h-14 "
+            className="w-full h-[58px]"
             src="/images/catalysing_logo (1).png"
             alt="image description"
             height={200}
@@ -76,7 +76,7 @@ const Header = () => {
                             className={`block py-2 px-4 text-gray-800 ${
                               activeSubLink === 5 ? "text-purple-700" : ""
                             }`}
-                            onClick={() => handleSubLinkClick(5)}
+                            onClick={() => handleSubLinkClick( 5)}
                           >
                             Overview
                           </Link>
