@@ -3,23 +3,23 @@
 import React from "react"
 // import React, { useState, useEffect } from "react"
 import Image from "next/image"
- const Overviewpage = () => {
-//   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+const Overviewpage = () => {
+  //   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
 
-//   const hoverTextStyleBlr = {
-//     transform: isMobile ? "rotate(90deg)" : "rotate(0deg)",
-//   }
+  //   const hoverTextStyleBlr = {
+  //     transform: isMobile ? "rotate(90deg)" : "rotate(0deg)",
+  //   }
 
-//   useEffect(() => {
-//     const handleResize = () => {
-//       setIsMobile(window.innerWidth < 768)
-//     }
+  //   useEffect(() => {
+  //     const handleResize = () => {
+  //       setIsMobile(window.innerWidth < 768)
+  //     }
 
-//     window.addEventListener("resize", handleResize)
-//     return () => {
-//       window.removeEventListener("resize", handleResize)
-//     }
-//   }, [])
+  //     window.addEventListener("resize", handleResize)
+  //     return () => {
+  //       window.removeEventListener("resize", handleResize)
+  //     }
+  //   }, [])
 
   return (
     <div>
@@ -366,7 +366,7 @@ import Image from "next/image"
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-around gap-4 px-4 md:px-2">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-4 px-4   md:px-2 ">
           <div className="flex-1 md:mr-4">
             <Image
               className="w-full h-36 lg:px-10"
@@ -377,16 +377,24 @@ import Image from "next/image"
             />
           </div>
 
-          {/* <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}> */}
-          <div className="flex md:mx-4 text-center" >
-            <Image
-              className="w-10 h-10 mx-auto "
-              src="/images/csi_2024/Arrow.png"
-              alt="image description"
-              height={40}
-              width={40}
-            />
+          
+          <div className="flex md:mx-4 text-center">
+            <div className="w-10 h-10 mx-auto">
+              {/* Mobile view rotation */}
+              <img
+                src="/images/csi_2024/Arrow.png"
+                alt="image description"
+                className="w-full h-full md:hidden transform rotate-90"
+              />
+              {/* Desktop view (no rotation) */}
+              <img
+                src="/images/csi_2024/Arrow.png"
+                alt="image description"
+                className="w-full h-full hidden md:block"
+              />
+            </div>
           </div>
+
           <div className="flex-1 md:mx-4">
             <Image
               className="w-full h-36 lg:px-10"
@@ -397,15 +405,22 @@ import Image from "next/image"
             />
           </div>
 
-          {/* <div className="flex md:mx-4 text-center" style={hoverTextStyleBlr}> */}
-          <div className="flex md:mx-4 text-center" >
-            <Image
-              className="w-10 h-10 mx-auto"
-              src="/images/csi_2024/Arrow.png"
-              alt="image description"
-              height={40}
-              width={40}
-            />
+            
+          <div className="flex md:mx-4 text-center">
+            <div className="w-10 h-10 mx-auto">
+              {/* Mobile view rotation */}
+              <img
+                src="/images/csi_2024/Arrow.png"
+                alt="image description"
+                className="w-full h-full md:hidden transform rotate-90"
+              />
+              {/* Desktop view (no rotation) */}
+              <img
+                src="/images/csi_2024/Arrow.png"
+                alt="image description"
+                className="w-full h-full hidden md:block"
+              />
+            </div>
           </div>
 
           <div className="flex-1 md:ml-4">
@@ -423,9 +438,7 @@ import Image from "next/image"
           <p className="text-xl">
             Stakeholder consensus and commitments with a focus on
             <p className="pb-0"></p>
-            <span className="font-semibold">
-              &apos;Connect, Solve&apos;
-            </span>
+            <span className="font-semibold">&apos;Connect, Solve&apos;</span>
             and
             <span className="font-semibold">&apos;Catalyse&apos;</span> through
           </p>
