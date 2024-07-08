@@ -153,7 +153,7 @@ const Csi2019page = () => {
         <div className="lg:flex justify-center items-center h-full">
           <div className="flex flex-col-reverse lg:flex-row lg:mt-32 w-full justify-center items-center">
             <div className="text-white lg:w-1/2 flex justify-center items-center">
-              <div className="bg-[#7E3F98] rounded-xl p-9 m-4 relative lg:start-20 mt-20">
+              <div className="bg-[#7E3F98] rounded-xl p-9 m-4 relative lg:start-20 lg:mt-20">
                 <div className="w-full">
                   <Image
                     className="w-40 lg:-ms-28 px-2 lg:-mt-24"

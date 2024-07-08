@@ -25,7 +25,8 @@ const Header = () => {
   }
 
   return (
-    <div className="z-10">
+    <>
+    {/* <div className="z-10 container  mx-auto"> */}
       <div className="py-5 px-5 flex fixed inset-0 h-[6em] top-6 w-[94.5%] mx-auto rounded-lg bg-white justify-between">
         <Link
           href="/"
@@ -284,7 +285,8 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </div>
+    {/* </div> */}
+    </>
   )
 }
 

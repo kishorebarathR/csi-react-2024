@@ -4,6 +4,7 @@ import React from "react"
 // import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Overview from "../../../utils/data"
+import Link from "next/link"
 const Overviewpage = () => {
   return (
     <div>
@@ -30,36 +31,85 @@ const Overviewpage = () => {
               />
             </div>
 
-            <div className="">
-              <div className="flex justify-center items-center">
-                <div className="flex rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 justify-center items-center text-center">
-                  <div>
-                    <Image
-                      className="w-10 h-full p-1"
-                      src="/images/csi_2024/calander_logo.png"
-                      alt="image description"
-                      height={400}
-                      width={400}
-                    />
-                  </div>
-                  <div className="text-md font-medium border-r-2 border-red-800 pr-2 pe-3">
-                    <p className="p-1 sm:text-sm">August 1 and 2, 2024</p>
-                  </div>
-                  <div>
-                    <Image
-                      className="w-10 h-full p-1"
-                      src="/images/csi_2024/location_logo.png"
-                      alt="image description"
-                      height={400}
-                      width={400}
-                    />
-                  </div>
-                  <div className="text-md font-medium p-1">
-                    <p className="sm:text-sm">New Delhi, NCR</p>
+            {/* desktop responsive */}
+            <div className="hidden sm:block">
+              <div className="">
+                <div className="flex justify-center items-center">
+                  <div className="flex rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 justify-center items-center text-center">
+                    <div>
+                      <Image
+                        className="w-10 h-full p-1"
+                        src="/images/csi_2024/calander_logo.png"
+                        alt="image description"
+                        height={400}
+                        width={400}
+                      />
+                    </div>
+                    <div className="text-md font-semibold border-r-2 border-red-800 pr-2 pe-3">
+                      <p className="p-1 sm:text-sm">August 1 and 2, 2024</p>
+                    </div>
+                    <div>
+                      <Image
+                        className="w-10 h-full p-1"
+                        src="/images/csi_2024/location_logo.png"
+                        alt="image description"
+                        height={400}
+                        width={400}
+                      />
+                    </div>
+                    <div className="text-md font-semibold  p-1">
+                      <Link
+                        href="https://www.google.com/maps/dir//15,+Janpath+Rd,+Windsor+Place,+New+Delhi,+Delhi+110001/@28.6173717,77.1352264,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2c9f0ba8411:0x4e632d73e149eb25!2m2!1d77.2182388!2d28.6177245?entry=ttu"
+                        className="sm:text-sm"
+                        target="_blank"
+                      >
+                        Dr Ambedkar International Centre, Janpath, New Delhi
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Mobile responsive */}
+            <div className="sm:hidden">
+  <div className="flex flex-row">
+    <div className="flex flex-col  lg:rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 ">
+      <div className="mb-3">
+        <Image
+          className="w-10 h-full p-1"
+          src="/images/csi_2024/calander_logo.png"
+          alt="image description"
+          height={400}
+          width={400}
+        />
+      </div>
+      <div className="text-md font-semibold mb-3">
+        <p className="p-1 sm:text-sm -mt-12 ms-10">August 1 and 2, 2024</p>
+      </div>
+      <div className="mb-3">
+        <Image
+          className="w-10 h-full p-1"
+          src="/images/csi_2024/location_logo.png"
+          alt="image description"
+          height={400}
+          width={400}
+        />
+      </div>
+      <div className="text-md font-semibold -mt-12 ms-10">
+        <Link
+          href="https://www.google.com/maps/dir//15,+Janpath+Rd,+Windsor+Place,+New+Delhi,+Delhi+110001/@28.6173717,77.1352264,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2c9f0ba8411:0x4e632d73e149eb25!2m2!1d77.2182388!2d28.6177245?entry=ttu"
+          className="sm:text-sm"
+          target="_blank"
+        >
+          Dr Ambedkar International Centre, Janpath, New Delhi
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
             <p className="text-4xl  text-[#7E3F98] text-center font-medium pt-14 ">
               SETTING THE STAGE
@@ -86,39 +136,38 @@ const Overviewpage = () => {
               meaningful cross-sectoral opportunities
             </span>
           </h1>
-        
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:flex justify-center pt-10 lg:px-10 lg:gap-10">
-          {Overview.map((items, index) => (
-            <div key={index} className="p-4">
-              <div className="flex justify-center items-center">
-                <Image
-                  className="w-32 h-auto"
-                  src={items.image}
-                  alt=""
-                  height={400}
-                  width={400}
-                />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:flex justify-center pt-10 lg:px-10 lg:gap-10">
+            {Overview.map((items, index) => (
+              <div key={index} className="p-4">
+                <div className="flex justify-center items-center">
+                  <Image
+                    className="w-32 h-auto"
+                    src={items.image}
+                    alt=""
+                    height={400}
+                    width={400}
+                  />
+                </div>
+                <div className="text-xl font-light text-center pt-5">
+                  <p className="text-center">{items.description}</p>
+                </div>
               </div>
-              <div className="text-xl font-light text-center pt-5">
-                <p className="text-center">{items.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <p className="text-center pt-10  lg:px-64 lg:text-xl text-2xl">
-          By sparking innovation and boosting investments, we can embark on an
-          inclusive and transformative journey towards the visionary goal of
-          India@2047.
-        </p>
+          <p className="text-center pt-10  lg:px-64 lg:text-xl text-2xl">
+            By sparking innovation and boosting investments, we can embark on an
+            inclusive and transformative journey towards the visionary goal of
+            India@2047.
+          </p>
         </div>
       </div>
 
       <div className="pb-5 bg-[url('/images/csi_2024/purple_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-a py-10">
         <div className=" flex justify-center items-center ">
           <Image
-            className=" w-44 -mt-24"
+            className=" w-44 -mt-32"
             src="/images/csi_2024/CSI_2024_logo.png"
             alt="image description"
             height={400}
@@ -217,82 +266,82 @@ const Overviewpage = () => {
             </p>
           </div>
           <div className="container">
-          <div className="lg:flex pt-16 lg:space-x-4 lg:px-14">
-            <div className="flex-1  rounded-lg bg-white p-5">
-              <Image
-                className="w-28 h-28 lg:-mt-20"
-                src="/images/csi_2024/Learning_Corridor_Showcase.png"
-                alt="image description"
-                height={200}
-                width={200}
-              />
-              <p className="text-2xl pt-5 text-[#8F4898] font-medium">
-                Learning <p className="pb-0"></p> Corridor/Showcase
-              </p>
-              <p className="pt-4">
-                Dive into interactive exhibits, multimedia presentations,
-                immersive experiences, storytelling sessions, short film
-                screenings, and pitch sessions. It’s all about making learning
-                dynamic and engaging.
-              </p>
-            </div>
-            <div className="flex-1  rounded-lg bg-white  p-5">
-              <Image
-                className="w-28 h-28 lg:-mt-20"
-                src="/images/csi_2024/Interactive_Sessions.png"
-                alt="image description"
-                height={200}
-                width={200}
-              />
-              <p className="text-2xl pt-5 text-[#8F4898] font-medium">
-                Interactive Sessions
-              </p>
-              <p className="pt-5">
-                Forget boring panels! We’re all about participatory processes.
-                Games, workshops, and other innovative tools will be co-designed
-                with our partners, ensuring everyone has ample time and space to
-                engage and contribute. It’s not just about intellectual
-                stimulation; it’s about creating an unforgettable experience.
-              </p>
-            </div>
-            <div className="flex-1 rounded-lg  bg-white p-5 ">
-              <Image
-                className="w-28 h-28 lg:-mt-20"
-                src="/images/csi_2024/Exciting_Side_Events.png"
-                alt="image description"
-                height={200}
-                width={200}
-              />
-              <p className="text-2xl pt-5  text-[#8F4898] font-medium">
-                Exciting Side Events
-              </p>
-              <p className="pt-5">
-                Do you have ideas that don’t quite fit the main themes? No
-                problem. Our side events offer a platform for conversations and
-                activities that align with the overall focus but venture into
-                new territories.
-              </p>
-            </div>
-            <div className="flex-1  rounded-lg bg-white p-5">
-              <Image
-                className="w-28 h-28 lg:-mt-20 "
-                src="/images/csi_2024/Networking_Zones.png"
-                alt="image description"
-                height={200}
-                width={200}
-              />
-              <p className="text-2xl pt-5  text-[#8F4898] font-medium">
-                Networking Zones
-              </p>
-              <p className="pt-4">
-                We’ve set up designated areas for attendees to connect, exchange
-                ideas, and explore collaboration opportunities with exhibitors
-                and fellow participants.
-              </p>
+            <div className="lg:flex pt-16 lg:space-x-4 lg:px-14">
+              <div className="flex-1  rounded-lg bg-white p-5 ">
+                <Image
+                  className="w-28 h-28 lg:-mt-20  "
+                  src="/images/csi_2024/Learning_Corridor_Showcase.png"
+                  alt="image description"
+                  height={200}
+                  width={200}
+                />
+                <p className="text-2xl pt-5 text-[#8F4898] font-medium">
+                  Learning <p className="pb-0"></p> Corridor/Showcase
+                </p>
+                <p className="pt-4">
+                  Dive into interactive exhibits, multimedia presentations,
+                  immersive experiences, storytelling sessions, short film
+                  screenings, and pitch sessions. It’s all about making learning
+                  dynamic and engaging.
+                </p>
+              </div>
+              <div className="flex-1  rounded-lg bg-white  p-5">
+                <Image
+                  className="w-28 h-28 lg:-mt-20"
+                  src="/images/csi_2024/Interactive_Sessions.png"
+                  alt="image description"
+                  height={200}
+                  width={200}
+                />
+                <p className="text-2xl pt-5 text-[#8F4898] font-medium">
+                  Interactive Sessions
+                </p>
+                <p className="pt-5">
+                  Forget boring panels! We’re all about participatory processes.
+                  Games, workshops, and other innovative tools will be
+                  co-designed with our partners, ensuring everyone has ample
+                  time and space to engage and contribute. It’s not just about
+                  intellectual stimulation; it’s about creating an unforgettable
+                  experience.
+                </p>
+              </div>
+              <div className="flex-1 rounded-lg  bg-white p-5 ">
+                <Image
+                  className="w-28 h-28 lg:-mt-20"
+                  src="/images/csi_2024/Exciting_Side_Events.png"
+                  alt="image description"
+                  height={200}
+                  width={200}
+                />
+                <p className="text-2xl pt-5  text-[#8F4898] font-medium">
+                  Exciting Side Events
+                </p>
+                <p className="pt-5">
+                  Do you have ideas that don’t quite fit the main themes? No
+                  problem. Our side events offer a platform for conversations
+                  and activities that align with the overall focus but venture
+                  into new territories.
+                </p>
+              </div>
+              <div className="flex-1  rounded-lg bg-white p-5">
+                <Image
+                  className="w-28 h-28 lg:-mt-20 "
+                  src="/images/csi_2024/Networking_Zones.png"
+                  alt="image description"
+                  height={200}
+                  width={200}
+                />
+                <p className="text-2xl pt-5  text-[#8F4898] font-medium">
+                  Networking Zones
+                </p>
+                <p className="pt-4">
+                  We’ve set up designated areas for attendees to connect,
+                  exchange ideas, and explore collaboration opportunities with
+                  exhibitors and fellow participants.
+                </p>
+              </div>
             </div>
           </div>
-          </div>
-
 
           <p className=" pt-14 text-2xl text-center   font-medium">
             <span className="font-medium">

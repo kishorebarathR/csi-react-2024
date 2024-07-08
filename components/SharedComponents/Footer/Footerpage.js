@@ -5,21 +5,24 @@ import React from "react"
 const Footerpage = () => {
   return (
     <>
-      <div className="">
-        <div className="bg-[#7E3F98]  grid grid-cols-1 md:grid-cols-2 border-b border-white-500 p-5 ">
-          <div className="p-5 ">
-            <Image
-              className="w-10/12  h-full"
+      {/* <div className=" container mx-auto"> */}
+        <div class="bg-[#7E3F98] flex flex-wrap border-b border-white-500 p-5">
+          {/* <!-- Left side with image --> */}
+          <div class="p-5 flex items-center">
+            <img
               src="/images/logo-light (1).png"
               alt="image description"
-              height={200}
-              width={1000}
+              class="w-10/12 md:w-auto"
+              height={400}
+              width={400}
             />
           </div>
-          <div className="flex items-center justify-center h-full text-white text-center md:text-right md:mt-0">
+
+          {/* <!-- Right side with text --> */}
+          <div class="flex-1 flex lg:items-end lg:justify-end text-white md:text-right lg:pb-8 ps-8 lg:ps-0 p-5">
             <a
               href="mailto:csi@catalysts.org"
-              className="hover:text-green-600 text-md lg:ms-44"
+              class="hover:text-green-600 text-md"
             >
               csi2014@catalysts.org
             </a>
@@ -99,7 +102,7 @@ const Footerpage = () => {
             </div>
           </nav>
         </div>
-      </div>
+      {/* </div> */}
     </>
   )
 }
