@@ -301,8 +301,8 @@ const Awardspage = () => {
             Do you know a social innovator or model? Nominate them now! Don’t
             miss the chance to bring their inspiring work into the spotlight.
             Submit your nominations by
-            <span className="text-yellow-300">
-              <b>July 9, 2024.</b>
+            <span className="text-yellow-300 ms-2">
+              <b>July 15, 2024.</b>
             </span>
           </p>
           <div className="text-center mt-10">
