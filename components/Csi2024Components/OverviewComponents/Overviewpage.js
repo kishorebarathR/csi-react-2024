@@ -74,31 +74,31 @@ const Overviewpage = () => {
             {/* Mobile responsive */}
             <div className="sm:hidden">
               <div className="flex flex-row">
-                <div className="flex flex-col  lg:rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 ">
+                <div className="flex flex-col  rounded-xl bg-[#F5D47B] mt-16 py-2 px-2 ">
                   <div className="mb-3">
                     <Image
-                      className="w-10 h-full p-1"
+                      className="w-10 h-full p-2 "
                       src="/images/csi_2024/calander_logo.png"
                       alt="image description"
                       height={400}
                       width={400}
                     />
                   </div>
-                  <div className="text-md font-semibold mb-3">
-                    <p className="p-1 sm:text-sm -mt-12 ms-10">
+                  <div className="text-xs mb-3 mt-2">
+                    <p className="p-1 sm:text-sm -mt-12 ms-8">
                       August 1 and 2, 2024
                     </p>
                   </div>
-                  <div className="mb-3">
+                  <div className="mb-4 -mt-10 ">
                     <Image
-                      className="w-10 h-full p-1"
+                      className="w-10 h-full p-2 pb-6"
                       src="/images/csi_2024/location_logo.png"
                       alt="image description"
                       height={400}
                       width={400}
                     />
                   </div>
-                  <div className="text-md font-semibold -mt-12 ms-10">
+                  <div className="text-xs  -mt-14 ms-8">
                     <Link
                       href="https://www.google.com/maps/dir//15,+Janpath+Rd,+Windsor+Place,+New+Delhi,+Delhi+110001/@28.6173717,77.1352264,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2c9f0ba8411:0x4e632d73e149eb25!2m2!1d77.2182388!2d28.6177245?entry=ttu"
                       className="sm:text-sm"
@@ -128,9 +128,39 @@ const Overviewpage = () => {
       </div>
 
       <div className=" bg-white pb-36">
+        <div className="container mx-auto pt-5 ">
+          <p className="text-4xl  text-[#7E3F98] text-center font-medium pt-4 pb-7 ">
+            HOW TO ENGAGE
+          </p>
+          {/* Mobile version (hidden on desktop) */}
+          <div className="block sm:hidden">
+            <div className="flex justify-center items-center">
+              <Image
+                className="w-full"
+                src="/images/csi_2024/engage-mobile-banner.png"
+                alt="image description"
+                height={800}
+                width={1400}
+              />
+            </div>
+          </div>
+
+          {/* Desktop version (hidden on mobile) */}
+          <div className="hidden sm:block">
+            <div className="flex">
+              <Image
+                className="w-full h-full px-52"
+                src="/images/csi_2024/how-to-engage.png"
+                alt="image description"
+                height={800}
+                width={1400}
+              />
+            </div>
+          </div>
+        </div>
         <div className="container mx-auto lg:p-0   p-4">
           <h1 className="text-3xl text-center pt-10 lg:px-14">
-            Catalysing Social Impact{" "}
+            Catalysing Social Impact
             <span className=" text-[#7E3F98] text-center ">
               is all about celebrating India’s achievements and finding
               meaningful cross-sectoral opportunities
@@ -265,7 +295,7 @@ const Overviewpage = () => {
               At CSI 2024, we’re breaking the mould of traditional conferences.
             </p>
           </div>
-         
+
           <div className="container mx-auto px-4 py-8">
             <div className="lg:flex lg:pt-16 lg:px-4 space-y-6 lg:space-x-4">
               <div className="flex-1 rounded-lg bg-white p-6 mt-6">
