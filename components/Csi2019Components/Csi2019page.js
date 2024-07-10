@@ -135,8 +135,8 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h1 className="text-4xl text-white lg:text-center">Landscape</h1>
-                <p className="mt-5 lg:text-center">
+                <h1 className="text-4xl text-white lg:text-left">Landscape</h1>
+                <p className="mt-5 lg:text-left">
                   Landscape data storytelling intertwines diverse data sets to
                   craft narratives that contextualise information for specific
                   subgroups. It transforms raw data into compelling stories,
@@ -163,10 +163,10 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h2 className="text-4xl violet text-white lg:text-center">
+                <h2 className="text-4xl violet text-white lg:text-left">
                   Solution Circles
                 </h2>
-                <p className="mt-3 lg:text-center">
+                <p className="mt-3 lg:text-left">
                   The Solution Circles approach, inspired by Socratic circles,
                   facilitates collaborative problem-solving. Participants engage
                   in dialogue, exploring diverse viewpoints to collectively
@@ -213,8 +213,8 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h3 className="text-4xl text-white lg:text-center">Challengers</h3>
-                <p className="mt-5 lg:text-center">
+                <h3 className="text-4xl text-white lg:text-left">Challengers</h3>
+                <p className="mt-5 lg:text-left">
                   Challengers curates and hosts talks from visionaries
                   propelling social change. Through compelling narratives, these
                   speakers share innovative initiatives addressing pressing
@@ -241,10 +241,10 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h3 className="text-4xl violet text-white lg:text-center ">
+                <h3 className="text-4xl violet text-white lg:text-left ">
                   Marketplace
                 </h3>
-                <p className="mt-3 lg:text-center ">
+                <p className="mt-3 lg:text-left ">
                   The Ideas Marketplace, an offshoot of Solution Circles,
                   cultivates collaborative innovation. Participants, inspired by
                   diverse perspectives, exchange and refine ideas within this
@@ -291,8 +291,8 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h3 className="text-4xl text-white lg:text-center">Legends</h3>
-                <p className="mt-5 lg:text-center">
+                <h3 className="text-4xl text-white lg:text-left">Legends</h3>
+                <p className="mt-5 lg:text-left">
                   We closed the Catalysing Social Impact 2019 convening with the
                   “Legends” segment - starting with a solemn memorial for the
                   stalwarts who walked so we could run followed by recognising
