@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react"
+import Image from "next/image"
 
 const WhatMakeUs = () => {
-    return (
-        <div>
-           <div className="pb-5 bg-[url('/images/csi_2024/Mask.png')] bg-cover bg-center h-full w-full flex items-center justify-center ">
+  return (
+    <div>
+      <div className=" bg-[url('/images/csi_2024/Mask.png')] bg-cover bg-center h-full w-full flex items-center justify-center ">
         <div className=" pb-5  px-5">
           <div className="text-center pt-10   ">
             <p className="text-4xl font-medium text-[#7E3F98] py-2 ">
@@ -15,16 +15,17 @@ const WhatMakeUs = () => {
             </p>
           </div>
 
-          <div className="container mx-auto px-4 py-8">
-            <div className="lg:flex lg:pt-16 lg:px-4 space-y-6 lg:space-x-4">
-              <div className="flex-1 rounded-lg bg-white p-6 mt-6">
+          <div className="container mx-auto px-4 py-8 ">
+            <div className="lg:flex lg:pt-16 lg:px-4  gap-4 ">
+              <div className="flex-1 rounded-lg bg-white p-6  ">
                 <Image
-                  className="w-28 h-28 lg:-mt-20"
+                  className="w-28 h-28 lg:-mt-20 -mt-20 m-auto lg:m-0"
                   src="/images/csi_2024/Learning_Corridor_Showcase.png"
                   alt="image description"
                   height={200}
                   width={200}
                 />
+
                 <p className="text-2xl pt-5 text-[#8F4898] font-medium">
                   Learning Corridor/Showcase
                 </p>
@@ -35,9 +36,9 @@ const WhatMakeUs = () => {
                   dynamic and engaging.
                 </p>
               </div>
-              <div className="flex-1 rounded-lg bg-white p-6">
+              <div className="flex-1 rounded-lg bg-white p-6  mt-20 lg:mt-0">
                 <Image
-                  className="w-28 h-28 lg:-mt-20"
+                  className="w-28 h-28 lg:-mt-20 -mt-20 m-auto lg:m-0"
                   src="/images/csi_2024/Interactive_Sessions.png"
                   alt="image description"
                   height={200}
@@ -46,7 +47,7 @@ const WhatMakeUs = () => {
                 <p className="text-2xl pt-5 text-[#8F4898] font-medium">
                   Interactive Sessions
                 </p>
-                <p className="pt-5">
+                <p className="pt-5 ">
                   Forget boring panels! We’re all about participatory processes.
                   Games, workshops, and other innovative tools will be
                   co-designed with our partners, ensuring everyone has ample
@@ -55,9 +56,9 @@ const WhatMakeUs = () => {
                   experience.
                 </p>
               </div>
-              <div className="flex-1 rounded-lg bg-white p-6">
+              <div className="flex-1 rounded-lg bg-white p-6 mt-20 lg:mt-0">
                 <Image
-                  className="w-28 h-28 lg:-mt-20"
+                  className="w-28 h-28 lg:-mt-20 -mt-20 m-auto lg:m-0"
                   src="/images/csi_2024/Exciting_Side_Events.png"
                   alt="image description"
                   height={200}
@@ -73,9 +74,9 @@ const WhatMakeUs = () => {
                   into new territories.
                 </p>
               </div>
-              <div className="flex-1 rounded-lg bg-white p-6">
+              <div className="flex-1 rounded-lg bg-white p-6 mt-20 lg:mt-0  ">
                 <Image
-                  className="w-28 h-28 lg:-mt-20"
+                  className="w-28 h-28 lg:-mt-20 -mt-20 m-auto lg:m-0"
                   src="/images/csi_2024/Networking_Zones.png"
                   alt="image description"
                   height={200}
@@ -93,7 +94,7 @@ const WhatMakeUs = () => {
             </div>
           </div>
 
-          <p className=" pt-14 text-2xl text-center   font-medium">
+          <p className=" pt-4 pb-4 text-2xl text-center   font-medium">
             <span className="font-medium">
               CSI 2024 is not just another conference—it’s an exciting
               opportunity designed to inspire and empower.
@@ -234,9 +235,9 @@ const WhatMakeUs = () => {
 
       <div className="bg-white lg:flex flex-wrap lg:flex-nowrap lg:px-44 gap-8 space-y-2 pb-8 ">
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1  ">
-          <div className="w-44 lg:w-auto lg:flex-shrink-0">
-            <Image
-              className="w-full h-full"
+          <div className="w-44 lg:w-auto lg:flex-shrink-0 mx-auto lg:mx-0 ">
+            <Image 
+              className="w-full h-full "
               src="/images/csi_2024/implementing_organisation.svg"
               alt="Implementing Organisations"
               height={400}
@@ -257,7 +258,7 @@ const WhatMakeUs = () => {
         </div>
 
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1">
-          <div className="w-44 lg:w-auto lg:flex-shrink-0">
+          <div className="w-44 lg:w-auto lg:flex-shrink-0 m-auto lg:m-0">
             <Image
               className="w-full h-full"
               src="/images/csi_2024/founder.svg"
@@ -280,7 +281,7 @@ const WhatMakeUs = () => {
         </div>
 
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1">
-          <div className=" w-44 h-full  lg:w-auto lg:flex-shrink-0">
+          <div className=" w-44 h-full  lg:w-auto lg:flex-shrink-0 m-auto lg:m-0">
             <Image
               className="w-full h-full"
               src="/images/csi_2024/government.svg"
@@ -302,7 +303,7 @@ const WhatMakeUs = () => {
         </div>
 
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1">
-          <div className="w-44 lg:w-auto lg:flex-shrink-0">
+          <div className="w-44 lg:w-auto lg:flex-shrink-0 m-auto lg:m-0">
             <Image
               className="w-full h-full"
               src="/images/csi_2024/research.svg"
@@ -323,7 +324,7 @@ const WhatMakeUs = () => {
         </div>
 
         <div className="w-full lg:w-1/5 lg:flex flex-row items-center  ">
-          <div className="w-44 lg:w-auto lg:flex-shrink-0">
+          <div className="w-44 lg:w-auto lg:flex-shrink-0 m-auto lg:m-0">
             <Image
               className="w-full h-full"
               src="/images/csi_2024/service_providers.svg"
@@ -349,8 +350,8 @@ const WhatMakeUs = () => {
           THEMES
         </p>
         <div className="px-4 lg:px-36">
-          <div className="lg:flex flex-col lg:flex-row justify-center items-center lg:space-x-5">
-            <div className="w-60 lg:w-auto lg:flex-shrink-0">
+          <div className="lg:flex flex-col lg:flex-row justify-center items-center lg:space-x-5 ">
+            <div className="w-60 lg:w-auto lg:flex-shrink-0  m-auto lg:m-0">
               <Image
                 className="w-52 h-full"
                 src="/images/csi_2024/Icon 19.svg"
@@ -378,7 +379,7 @@ const WhatMakeUs = () => {
           </div>
 
           <div className="lg:flex flex-col lg:flex-row justify-center items-center pt-16 lg:space-x-5">
-            <div className="w-60 lg:w-auto lg:flex-shrink-0 order-1 lg:order-2">
+            <div className="w-60 lg:w-auto lg:flex-shrink-0 order-1 lg:order-2 m-auto lg:m-0">
               <Image
                 className="w-52 h-full"
                 src="/images/csi_2024/Icon 20.svg"
@@ -407,7 +408,7 @@ const WhatMakeUs = () => {
           </div>
 
           <div className="lg:flex flex-col lg:flex-row justify-center items-center pt-16 lg:space-x-5 pb-8">
-            <div className="w-60 lg:w-auto lg:flex-shrink-0">
+            <div className="w-60 lg:w-auto lg:flex-shrink-0  m-auto lg:m-0">
               <Image
                 className="w-52 h-full"
                 src="/images/csi_2024/Icon 21.svg"
@@ -445,9 +446,9 @@ const WhatMakeUs = () => {
             Express Your interest here
           </a>
         </div> */}
-      </div> 
-        </div>
-    );
+      </div>
+    </div>
+  )
 }
 
-export default WhatMakeUs;
+export default WhatMakeUs

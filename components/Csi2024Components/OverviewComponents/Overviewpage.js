@@ -194,10 +194,10 @@ const Overviewpage = () => {
         </div>
       </div>
 
-      <div className="pb-5 bg-[url('/images/csi_2024/purple_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-a py-10">
+      <div className=" bg-[url('/images/csi_2024/purple_bg.png')] bg-cover bg-bottom bg-no-repeat w-full ">
         <div className=" flex justify-center items-center ">
           <Image
-            className=" w-44 -mt-32"
+            className=" w-44 -mt-24"
             src="/images/csi_2024/CSI_2024_logo.png"
             alt="image description"
             height={400}
@@ -276,7 +276,7 @@ const Overviewpage = () => {
           </div>
         </div>
 
-        <div className="text-center my-5 mt-10 text-white">
+        <div className="text-center pb-5  mt-10 text-white">
           <p className="text-xl">
             Join us for an exciting and transformative event
             <p className="mb-0"></p> that promises to spark ideas and drive
