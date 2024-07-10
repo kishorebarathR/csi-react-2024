@@ -3,7 +3,7 @@ import React from 'react';
 const Aboutpage = () => {
     return (
         <>
-             <div className=" mt-24 lg:px-10  ">
+             <div className=" lg:mt-24 mt-72 lg:px-10  ">
           <h2 className=" text-4xl text-[#7E3F98]">
             <b className="font40px px-3 lg:px-0">About</b>
           </h2>
@@ -152,6 +152,7 @@ const Aboutpage = () => {
             </div>
           </div>
         </div>
+        
         </>
     );
 }

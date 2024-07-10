@@ -87,19 +87,36 @@ const Homepage = () => {
                   <p className="lg:p-5 text-5xl  bg-[#4B2361] text-white lg:me-10 mb-0 px-5 ">
                     New Delhi
                   </p>
-                  <div className="text-end lg:me-14 lg:mt-5 lg:py-0 py-10   bg-[#4B2361] ">
-                    <a
-                      href="csi-2024"
-                      className="focus:outline-none text-violet-600   bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 lg:me-0 me-48 mb-14 dark:focus:ring-yellow-900"
-                    >
-                      View Details
-                    </a>
+                  <div className="text-end lg:me-14 lg:mt-5 lg:py-0 py-10 bg-[#4B2361]">
+                    {/* Mobile View */}
+                    <div className="lg:hidden text-left">
+                      {" "}
+                      {/* Hide on large screens */}
+                      <a
+                        href="csi-2024"
+                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 mb-14 dark:focus:ring-yellow-900"
+                      >
+                        View Details
+                      </a>
+                    </div>
+
+                    {/* Desktop View */}
+                    <div className="hidden lg:block text-right ">
+                      {" "}
+                      {/* Hide on small screens */}
+                      <a
+                        href="csi-2024"
+                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4  dark:focus:ring-yellow-900"
+                      >
+                        View Details
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className=" relative lg:ms-0 ms-52">
                 <Image
-                  className="w-44  h-44 lg:p-4 absolute bottom-0  lg:right-0 "
+                  className="w-40 h-40 lg:p-4 absolute bottom-0  lg:right-0 "
                   src="/images/home/constellation_3.png"
                   alt="image description"
                   height={400}
