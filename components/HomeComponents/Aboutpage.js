@@ -3,11 +3,12 @@ import React from 'react';
 const Aboutpage = () => {
     return (
         <>
-             <div className=" mt-28 lg:px-10  ">
+             <div className=" mt-24 lg:px-10  ">
           <h2 className=" text-4xl text-[#7E3F98]">
-            <b className="font40px">About</b>
+            <b className="font40px px-3 lg:px-0">About</b>
           </h2>
-          <div className='font16px'>
+          <div className='font16px lg:px-0 px-3'>
+
           <p className="mt-5 ">
             <b>Catalysing Social Impact [CSI]</b> is a living forum hosted by
             the Catalyst Group for thinkers, doers, and investors who come
@@ -68,8 +69,8 @@ const Aboutpage = () => {
             at 100.
           </p>
           </div>
-          <h3 className="text-4xl mt-14 text-[#7E3F98]">
-            <b className="font40px">Conversations Cafe</b>
+          <h3 className="text-4xl mt-14 text-[#7E3F98] ">
+            <b className="font40px lg:px-3">Conversations Cafe</b>
           </h3>
 
           <div className="lg:grid lg:grid-cols-3 mt-10 mb-10 ">

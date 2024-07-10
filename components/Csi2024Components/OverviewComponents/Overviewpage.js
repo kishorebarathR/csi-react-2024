@@ -9,7 +9,7 @@ const Overviewpage = () => {
   return (
     <div>
       <div className="relative bg-[url('/images/csi_2024/CSI_2024_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[180vh] custom-container">
-        <div className=" pt-5 top-[18%] ">
+        <div className=" pt-5 top-[18%] px-6 lg:px-0">
           <div className="w-full h-full    lg:pt-44 lg:absolute top-0 start-0  ">
             <div className="lg:px-80 lg:pt-10">
               <Image
@@ -73,43 +73,43 @@ const Overviewpage = () => {
 
             {/* Mobile responsive */}
             <div className="sm:hidden">
-  <div className="flex flex-row">
-    <div className="flex flex-col  lg:rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 ">
-      <div className="mb-3">
-        <Image
-          className="w-10 h-full p-1"
-          src="/images/csi_2024/calander_logo.png"
-          alt="image description"
-          height={400}
-          width={400}
-        />
-      </div>
-      <div className="text-md font-semibold mb-3">
-        <p className="p-1 sm:text-sm -mt-12 ms-10">August 1 and 2, 2024</p>
-      </div>
-      <div className="mb-3">
-        <Image
-          className="w-10 h-full p-1"
-          src="/images/csi_2024/location_logo.png"
-          alt="image description"
-          height={400}
-          width={400}
-        />
-      </div>
-      <div className="text-md font-semibold -mt-12 ms-10">
-        <Link
-          href="https://www.google.com/maps/dir//15,+Janpath+Rd,+Windsor+Place,+New+Delhi,+Delhi+110001/@28.6173717,77.1352264,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2c9f0ba8411:0x4e632d73e149eb25!2m2!1d77.2182388!2d28.6177245?entry=ttu"
-          className="sm:text-sm"
-          target="_blank"
-        >
-          Dr Ambedkar International Centre, Janpath, New Delhi
-        </Link>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+              <div className="flex flex-row">
+                <div className="flex flex-col  lg:rounded-full bg-[#F5D47B] mt-16 lg:p-2 p-1 lg:px-6 ">
+                  <div className="mb-3">
+                    <Image
+                      className="w-10 h-full p-1"
+                      src="/images/csi_2024/calander_logo.png"
+                      alt="image description"
+                      height={400}
+                      width={400}
+                    />
+                  </div>
+                  <div className="text-md font-semibold mb-3">
+                    <p className="p-1 sm:text-sm -mt-12 ms-10">
+                      August 1 and 2, 2024
+                    </p>
+                  </div>
+                  <div className="mb-3">
+                    <Image
+                      className="w-10 h-full p-1"
+                      src="/images/csi_2024/location_logo.png"
+                      alt="image description"
+                      height={400}
+                      width={400}
+                    />
+                  </div>
+                  <div className="text-md font-semibold -mt-12 ms-10">
+                    <Link
+                      href="https://www.google.com/maps/dir//15,+Janpath+Rd,+Windsor+Place,+New+Delhi,+Delhi+110001/@28.6173717,77.1352264,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2c9f0ba8411:0x4e632d73e149eb25!2m2!1d77.2182388!2d28.6177245?entry=ttu"
+                      className="sm:text-sm"
+                      target="_blank"
+                    >
+                      Dr Ambedkar International Centre, Janpath, New Delhi
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <p className="text-4xl  text-[#7E3F98] text-center font-medium pt-14 ">
               SETTING THE STAGE
@@ -202,7 +202,7 @@ const Overviewpage = () => {
                   width={600}
                 />
               </div>
-              <div className=" flex justify-center items-center">
+              <div className=" flex justify-center items-center mb-14 lg:mb-0">
                 <p className="text-white">
                   <span className="text-[#FFC107]">
                     Supercharge Collective Action
@@ -235,9 +235,9 @@ const Overviewpage = () => {
               <div className=" flex justify-center items-center">
                 <p className="text-white">
                   <span className="text-[#FFC107]">
-                    Engage in Insightful Discussions{" "}
-                  </span>{" "}
-                  <p className="mb-0"></p> Dive deep into key topics and{" "}
+                    Engage in Insightful Discussions
+                  </span>
+                  <p className="mb-0"></p> Dive deep into key topics and
                   <p className="mb-0"></p>
                   explore impactful ideas
                 </p>
@@ -265,18 +265,19 @@ const Overviewpage = () => {
               At CSI 2024, we’re breaking the mould of traditional conferences.
             </p>
           </div>
-          <div className="container">
-            <div className="lg:flex pt-16 lg:space-x-4 lg:px-14">
-              <div className="flex-1  rounded-lg bg-white p-5 ">
+         
+          <div className="container mx-auto px-4 py-8">
+            <div className="lg:flex lg:pt-16 lg:px-4 space-y-6 lg:space-x-4">
+              <div className="flex-1 rounded-lg bg-white p-6 mt-6">
                 <Image
-                  className="w-28 h-28 lg:-mt-20  "
+                  className="w-28 h-28 lg:-mt-20"
                   src="/images/csi_2024/Learning_Corridor_Showcase.png"
                   alt="image description"
                   height={200}
                   width={200}
                 />
                 <p className="text-2xl pt-5 text-[#8F4898] font-medium">
-                  Learning <p className="pb-0"></p> Corridor/Showcase
+                  Learning Corridor/Showcase
                 </p>
                 <p className="pt-4">
                   Dive into interactive exhibits, multimedia presentations,
@@ -285,7 +286,7 @@ const Overviewpage = () => {
                   dynamic and engaging.
                 </p>
               </div>
-              <div className="flex-1  rounded-lg bg-white  p-5">
+              <div className="flex-1 rounded-lg bg-white p-6">
                 <Image
                   className="w-28 h-28 lg:-mt-20"
                   src="/images/csi_2024/Interactive_Sessions.png"
@@ -305,7 +306,7 @@ const Overviewpage = () => {
                   experience.
                 </p>
               </div>
-              <div className="flex-1 rounded-lg  bg-white p-5 ">
+              <div className="flex-1 rounded-lg bg-white p-6">
                 <Image
                   className="w-28 h-28 lg:-mt-20"
                   src="/images/csi_2024/Exciting_Side_Events.png"
@@ -313,7 +314,7 @@ const Overviewpage = () => {
                   height={200}
                   width={200}
                 />
-                <p className="text-2xl pt-5  text-[#8F4898] font-medium">
+                <p className="text-2xl pt-5 text-[#8F4898] font-medium">
                   Exciting Side Events
                 </p>
                 <p className="pt-5">
@@ -323,15 +324,15 @@ const Overviewpage = () => {
                   into new territories.
                 </p>
               </div>
-              <div className="flex-1  rounded-lg bg-white p-5">
+              <div className="flex-1 rounded-lg bg-white p-6">
                 <Image
-                  className="w-28 h-28 lg:-mt-20 "
+                  className="w-28 h-28 lg:-mt-20"
                   src="/images/csi_2024/Networking_Zones.png"
                   alt="image description"
                   height={200}
                   width={200}
                 />
-                <p className="text-2xl pt-5  text-[#8F4898] font-medium">
+                <p className="text-2xl pt-5 text-[#8F4898] font-medium">
                   Networking Zones
                 </p>
                 <p className="pt-4">
@@ -366,7 +367,7 @@ const Overviewpage = () => {
         <div className="flex flex-col md:flex-row items-center justify-around gap-4 px-4   md:px-2 container mx-auto ">
           <div className="flex-1 md:mr-4">
             <Image
-              className="w-full h-auto lg:px-10"
+              className="lg:w-full h-auto lg:px-10"
               src="/images/csi_2024/contact.png"
               alt="image description"
               height={200}
@@ -397,7 +398,7 @@ const Overviewpage = () => {
 
           <div className="flex-1 md:mx-4">
             <Image
-              className="w-full h-auto lg:px-10"
+              className="lg:w-full h-auto lg:px-10"
               src="/images/csi_2024/solve.png"
               alt="image description"
               height={200}
@@ -428,7 +429,7 @@ const Overviewpage = () => {
 
           <div className="flex-1 md:ml-4">
             <Image
-              className="w-full h-auto lg:px-10"
+              className="lg:w-full h-auto lg:px-10"
               src="/images/csi_2024/contact.png"
               alt="image description"
               height={200}
@@ -483,7 +484,7 @@ const Overviewpage = () => {
       </div>
 
       <div className="bg-white lg:flex flex-wrap lg:flex-nowrap lg:px-44 gap-8 space-y-2 pb-8 ">
-        <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1 ">
+        <div className="w-full lg:w-1/5 lg:flex flex-row items-center border-b p-1  ">
           <div className="w-44 lg:w-auto lg:flex-shrink-0">
             <Image
               className="w-full h-full"
@@ -493,7 +494,7 @@ const Overviewpage = () => {
               width={400}
             />
           </div>
-          <div className="text-md ml-4">
+          <div className="text-md ml-4 ">
             <p className="p-1">
               <span className="font-semibold font16px text-purple">
                 Implementing organisations:
@@ -594,7 +595,7 @@ const Overviewpage = () => {
         </div>
       </div>
 
-      <div className="  bg-[url('/images/csi_2024/Mask-2.png')] bg-cover bg-bottom bg-no-repeat lg:w-full   ">
+      <div className="  bg-[url('/images/csi_2024/Mask-2.png')] bg-cover bg-bottom bg-no-repeat lg:w-full pb-5   ">
         <p className="text-3xl text-center font-medium   text-[#7E3F98] pt-8  ">
           THEMES
         </p>
