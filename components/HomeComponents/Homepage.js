@@ -89,7 +89,7 @@ const Homepage = () => {
                   </p>
                   <div className="text-end lg:me-14 lg:mt-5 lg:py-0 py-10 bg-[#4B2361]">
                     {/* Mobile View */}
-                    <div className="lg:hidden text-left">
+                    <div className="lg:hidden text-left px-4">
                       {" "}
                       {/* Hide on large screens */}
                       <a
@@ -102,7 +102,7 @@ const Homepage = () => {
 
                     {/* Desktop View */}
                     <div className="hidden lg:block text-right ">
-                      {" "}
+                    
                       {/* Hide on small screens */}
                       <a
                         href="csi-2024"
