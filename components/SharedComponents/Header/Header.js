@@ -52,7 +52,7 @@ const Header = () => {
                   <li className="bg-white">
                     <Link
                       href="/"
-                      className={`block -py-2 -px-8 text-gray-900 rounded bg-white md:border-0 ${
+                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         activeLink === 0 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(0)}
@@ -62,7 +62,7 @@ const Header = () => {
                   </li>
                   <li className="bg-white relative group">
                     <button
-                      className={`block -py-2 -px-8 text-gray-900 rounded bg-white md:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-700 ${
+                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-700 ${
                         activeLink === 1 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(1)}
@@ -74,7 +74,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="csi-2024"
-                            className={`block py-2 px-4 text-gray-800 ${
+                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               activeSubLink === 5 ? "text-purple-700" : ""
                             }`}
                             onClick={() => handleSubLinkClick( 5)}
@@ -85,7 +85,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="csi-awards-2024"
-                            className={`block py-2 px-4 text-gray-800 ${
+                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               activeSubLink === 6 ? "text-purple-700" : ""
                             }`}
                             onClick={() => handleSubLinkClick(6)}
@@ -99,7 +99,7 @@ const Header = () => {
                   <li className="bg-white">
                     <Link
                       href="csi-2019"
-                      className={`block -py-2 -px-8 text-gray-900 rounded bg-white md:border-0 ${
+                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         activeLink === 2 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(2)}
@@ -110,7 +110,7 @@ const Header = () => {
                   <li className="bg-white">
                     <Link
                       href="how-contribute"
-                      className={`block -py-2 -px-8 text-gray-900 rounded bg-white md:border-0 ${
+                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         activeLink === 3 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(3)}
@@ -121,7 +121,7 @@ const Header = () => {
                   <li className="bg-white">
                     <Link
                       href="interest-form"
-                      className={`block -py-2 -px-8 text-gray-900 rounded bg-white md:border-0 ${
+                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         activeLink === 4 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(4)}
