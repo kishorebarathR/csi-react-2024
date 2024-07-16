@@ -84,11 +84,22 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
+                            href="csi-agenda"
+                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
+                              activeSubLink === 6 ? "text-purple-700" : ""
+                            }`}
+                            onClick={() => handleSubLinkClick(7)}
+                          >
+                            Agenda
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
                             href="csi-awards-2024"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               activeSubLink === 6 ? "text-purple-700" : ""
                             }`}
-                            onClick={() => handleSubLinkClick(6)}
+                            onClick={() => handleSubLinkClick(7)}
                           >
                             Awards
                           </Link>
@@ -229,6 +240,17 @@ const Header = () => {
                               onClick={() => handleSubLinkClick(1, 5)}
                             >
                               Overview
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="csi-agenda"
+                              className={`block py-2 px-4 text-gray-800 ${
+                                activeSubLink === 7 ? "text-purple-700" : ""
+                              }`}
+                              onClick={() => handleSubLinkClick(1, 7)}
+                            >
+                              Agenda
                             </Link>
                           </li>
                           <li>

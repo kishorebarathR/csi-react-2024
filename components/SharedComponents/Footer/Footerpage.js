@@ -5,7 +5,7 @@ import React from "react"
 const Footerpage = () => {
   return (
     <>
-      {/* <div className=" container mx-auto"> */}
+      {/* <div className=" container mx-auto "> */}
         <div class="bg-[#7E3F98] flex flex-wrap border-b border-white-500 p-5">
           {/* <!-- Left side with image --> */}
           <div class="p-5 flex items-center">
@@ -30,10 +30,10 @@ const Footerpage = () => {
         </div>
 
         <div className="bg-[#7E3F98] px-10 ">
-          <nav className="violet">
-            <div className="max-w-screen-xl mx-auto p-4 violet">
+          <nav className="">
+            <div className="max-w-screen-xl mx-auto  violet">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div className="w-full md:w-auto mb-4 md:mb-0">
+                <div className="w-full md:w-auto mb-4 md:mb-0 lg:-mt-16 ">
                   <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                     <li className="violet">
                       <Link
@@ -46,7 +46,7 @@ const Footerpage = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-full md:w-auto mb-4 md:mb-0">
+                <div className="w-full md:w-auto mb-4 md:mb-0 lg:-mt-16">
                   <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                     <li className="violet">
                       <Link
@@ -59,7 +59,7 @@ const Footerpage = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-full md:w-auto mb-4 md:mb-0 lg:mt-10">
+                <div className="w-full md:w-auto mb-4 md:mb-0  mt-6 pb-4">
                   <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                     <li className="violet">
                       <p
@@ -70,14 +70,21 @@ const Footerpage = () => {
                       </p>
                       <Link
                         href="csi-2024"
-                        className="block py-2 px-3 lg:ms-1 mt-1 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        className="block py-2 px-3 lg:ms-1 mt-1 text-xs text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
                         aria-current="page"
                       >
                         Overview
                       </Link>
                       <Link
+                        href="csi-agenda"
+                        className="block py-2 px-3 lg:ms-2 mt-1 text-xs text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        aria-current="page"
+                      >
+                        Agenda
+                      </Link>
+                      <Link
                         href="csi-awards-2024"
-                        className="block py-2 px-3 lg:ms-2 mt-1 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                        className="block py-2 px-3 lg:ms-2 mt-1 text-xs text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
                         aria-current="page"
                       >
                         Awards
@@ -85,7 +92,7 @@ const Footerpage = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-full md:w-auto">
+                <div className="w-full md:w-auto lg:-mt-16">
                   <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                     <li className="violet">
                       <Link

@@ -77,3 +77,12 @@ body {
 .bg-yellow {
   background: #f3d479 !important;
 }
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #7E3F98;
+  
+}
