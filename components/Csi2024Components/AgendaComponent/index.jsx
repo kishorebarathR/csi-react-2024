@@ -1,12 +1,14 @@
-import React from 'react';
-import Agendapage from './Agendapage';
+import React from "react"
+import Agendapage from "./Agendapage"
+
 
 const Index = () => {
-    return (
-        <div>
-            <Agendapage/>
-        </div>
-    );
+  return (
+    <div>
+      <Agendapage />
+     
+    </div>
+  )
 }
 
-export default Index;
+export default Index
