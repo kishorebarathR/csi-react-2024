@@ -39,23 +39,23 @@ const Agendapage = () => {
         `}
       </style>
       <div className="">
-        <div className="relative bg-[url('/images/agenda/agenga_bg_img.png')] bg-cover bg-bottom bg-no-repeat w-full h-full custom-container">
+        <div className="relative bg-[url('/images/agenda/Agenda-bg-img.png')] bg-cover bg-bottom bg-no-repeat w-full h-full custom-container">
           <div className="w-full h-full">
-            <div className="pt-16 flex justify-center items-center">
+            <div className="pt-16 flex justify-center items-center mx-3">
               <Image
-                className="object-cover lg:w-1/2 h-full"
-                src="/images/agenda/agenda-img2.png"
+                className="object-cover lg:w-[54%]  h-full  "
+                src="/images/agenda/Catalysing_Social_Impact_2024_full.png"
                 alt="image description"
-                height={800}
-                width={1000}
+                height={200}
+                width={1400}
               />
             </div>
 
-            <p className="text-4xl text-[#7E3F98] text-center font-medium pt-14">
+            <p className="text-4xl  text-[#7E3F98] text-center font-semibold pt-14">
               AGENDA
             </p>
-            <div className="bg-white rounded-2xl lg:mx-96 p-5 mt-10 text-center border border-yellow-200">
-              <p className="text-sm font-semibold">
+            <div className="bg-white rounded-lg mx-4 p-3 lg:w-[40%] sm:mx-auto  mt-10 text-center border border-yellow-200">
+              <p className="text-xs sm:text-base font-semibold">
                 <span className="text-[#8C54A3]">Venue:</span> Dr. Ambedkar
                 International Centre, Janpath, New Delhi
               </p>
@@ -64,7 +64,7 @@ const Agendapage = () => {
               </p>
             </div>
 
-            <p className="text-center lg:px-40 pt-10">
+            <p className="text-center lg:w-[55%] px-1 mx-auto pt-10">
               Discover diverse themes such as Grounded Climate Response,
               Innovative Financing, and Fidelity & Quality, covering topics that
               range from resilience-building for businesses to forging
@@ -73,11 +73,12 @@ const Agendapage = () => {
               social impact, CSI 2024 offers invaluable opportunities to learn,
               network, and contribute to positive change.
             </p>
-            <p className="text-center lg:px-40 pt-6">
+            <p className="text-center lg:w-[55%] px-1 mx-auto pt-6">
               View our events schedule below and plan your participation to
               maximise your CSI 2024 experience.
             </p>
           </div>
+          
           <div className="flex justify-center items-center lg:pt-24 pt-10">
             <div className="">
               <div className="flex mb-5 justify-center">
@@ -129,21 +130,20 @@ const Agendapage = () => {
                 >
                   Download PDF
                   <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-2"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 16a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1zm7-14a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"
-                  clipRule="evenodd"
-                />
-              </svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M3 16a1 1 0 011-1h12a1 1 0 011 1v1a1 1 0 01-1 1H4a1 1 0 01-1-1v-1zm7-14a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                 </a>
-               
               </div>
-            
+
               <div>
                 {activeTab === "day1" && <Day1Content />}
                 {activeTab === "day2" && <Day2Content />}
