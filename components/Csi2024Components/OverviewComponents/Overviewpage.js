@@ -1,5 +1,4 @@
 "use client"
-
 import React from "react"
 // import React, { useState, useEffect } from "react"
 import Image from "next/image"
@@ -137,7 +136,7 @@ const Overviewpage = () => {
             <div className="flex justify-center items-center">
               <Image
                 className="w-full"
-                src="/images/csi_2024/engage-mobile-banner.png"
+                src="/images/csi_2024/how-to-engage-mobile-banner (1).jpg"
                 alt="image description"
                 height={800}
                 width={1400}
@@ -149,8 +148,8 @@ const Overviewpage = () => {
           <div className="hidden sm:block">
             <div className="flex">
               <Image
-                className="w-full h-full px-52"
-                src="/images/csi_2024/how-to-engage.png"
+                className="w-full h-full px-24"
+                src="/images/csi_2024/how-to-engage01.jpg"
                 alt="image description"
                 height={800}
                 width={1400}
@@ -284,8 +283,6 @@ const Overviewpage = () => {
           </p>
         </div>
       </div>
-
-      
     </div>
   )
 }

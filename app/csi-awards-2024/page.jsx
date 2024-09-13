@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Csi2024Awards from '../../components/Csi2024Components/AwardsComponents'
+import Csi2024Awards from '@/components/Csi2024Components/AwardsComponents'
 
 const page = () => {
     return (

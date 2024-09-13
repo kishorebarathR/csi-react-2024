@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_883" data-name="Rectangle 883" width="48.389" height="48.389" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1469" data-name="Group 1469" transform="translate(-151 -860)">
+    <g id="Ellipse_73" data-name="Ellipse 73" transform="translate(151 860)" fill="#fff" stroke="#c1e8ea" stroke-width="1">
+      <circle cx="37" cy="37" r="37" stroke="none"/>
+      <circle cx="37" cy="37" r="36.5" fill="none"/>
+    </g>
+    <g id="Group_1449" data-name="Group 1449" transform="translate(164 873)">
+      <line id="Line_47" data-name="Line 47" x2="7.525" transform="translate(27.32 24.194)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+      <g id="Group_1444" data-name="Group 1444" transform="translate(0 0)">
+        <g id="Group_1443" data-name="Group 1443" clip-path="url(#clip-path)">
+          <line id="Line_48" data-name="Line 48" x1="5.044" transform="translate(42.121 24.195)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+          <line id="Line_49" data-name="Line 49" x1="5.044" transform="translate(1.224 24.195)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+        </g>
+      </g>
+      <line id="Line_50" data-name="Line 50" x1="3.567" y2="3.567" transform="translate(36.87 7.952)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+      <line id="Line_51" data-name="Line 51" x1="3.567" y2="3.567" transform="translate(7.952 36.87)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+      <g id="Group_1446" data-name="Group 1446" transform="translate(0 0)">
+        <g id="Group_1445" data-name="Group 1445" clip-path="url(#clip-path)">
+          <line id="Line_52" data-name="Line 52" y2="5.044" transform="translate(24.195 1.225)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+          <line id="Line_53" data-name="Line 53" y2="5.044" transform="translate(24.195 42.121)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+        </g>
+      </g>
+      <line id="Line_54" data-name="Line 54" x2="3.567" y2="3.567" transform="translate(7.952 7.952)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+      <line id="Line_55" data-name="Line 55" x2="3.567" y2="3.567" transform="translate(36.871 36.87)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+      <g id="Group_1448" data-name="Group 1448" transform="translate(1.224 1.224)">
+        <g id="Group_1450" data-name="Group 1450" transform="translate(0 0)">
+          <circle id="Ellipse_71" data-name="Ellipse 71" cx="3.009" cy="3.009" r="3.009" transform="translate(20.077 19.961)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+          <circle id="Ellipse_72" data-name="Ellipse 72" cx="22.97" cy="22.97" r="22.97" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+          <line id="Line_56" data-name="Line 56" y1="12.923" transform="translate(23.086 7.039)" fill="none" stroke="#3bd0a7" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

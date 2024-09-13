@@ -1,5 +1,5 @@
 import React from "react"
-import Agenda from "../../components/Csi2024Components/AgendaComponent"
+import Agenda from '@/components/Csi2024Components/AgendaComponent'
 const Page = () => {
   return (
     <div>

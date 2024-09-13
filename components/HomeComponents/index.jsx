@@ -8,7 +8,7 @@ const index = () => {
       <Homepage />
       <Aboutpage/>
     </div>
-  )
+  ) 
 }
 
 export default index

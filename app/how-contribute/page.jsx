@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HowToContribute from '../../components/HowToAttribute'
+import HowToContribute from '@/components/HowToAttribute'
 
 const page = () => {
     return (

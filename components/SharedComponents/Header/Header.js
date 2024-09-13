@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-    {/* <div className="z-10 container  mx-auto"> */}
+      {/* <div className="z-10 container  mx-auto"> */}
       <div className="py-5 px-5 flex fixed inset-0 h-[6em] top-6 w-[94.5%] mx-auto rounded-lg bg-white justify-between">
         <Link
           href="/"
@@ -77,7 +77,7 @@ const Header = () => {
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               activeSubLink === 5 ? "text-purple-700" : ""
                             }`}
-                            onClick={() => handleSubLinkClick( 5)}
+                            onClick={() => handleSubLinkClick(5)}
                           >
                             Overview
                           </Link>
@@ -95,13 +95,13 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href="csi-awards-2024"
+                            href="csi-2024-films"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               activeSubLink === 6 ? "text-purple-700" : ""
                             }`}
                             onClick={() => handleSubLinkClick(7)}
                           >
-                            Awards
+                            Films
                           </Link>
                         </li>
                       </ul>
@@ -120,24 +120,24 @@ const Header = () => {
                   </li>
                   <li className="bg-white">
                     <Link
-                      href="how-contribute"
+                      href="csi-2024-how-to-engage"
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         activeLink === 3 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(3)}
                     >
-                      How can you contribute?
+                      How to Engage
                     </Link>
                   </li>
                   <li className="bg-white">
                     <Link
-                      href="interest-form"
-                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
+                      href="https://docs.google.com/forms/d/e/1FAIpQLScwwcEsK3tlih6udYZ1dU2WADxcCf846G6pf4K_qrEfGeYO-A/viewform"
+                      className={`block -py-2 -px-8focus:outline-none text-black bg-[#F3D479] hover:text-[#7e3f98]  font-normal rounded-3xl text-sm px-8 py-3 -mt-3  ${
                         activeLink === 4 ? "text-purple-700" : ""
                       }`}
                       onClick={() => handleLinkClick(4)}
                     >
-                      Sign Up
+                      Subscribe Now
                     </Link>
                   </li>
                 </ul>
@@ -255,13 +255,13 @@ const Header = () => {
                           </li>
                           <li>
                             <Link
-                              href="csi-awards-2024"
+                              href="csi-2024-films"
                               className={`block py-2 px-4 text-gray-800 ${
                                 activeSubLink === 6 ? "text-purple-700" : ""
                               }`}
                               onClick={() => handleSubLinkClick(1, 6)}
                             >
-                              Awards
+                              Films
                             </Link>
                           </li>
                         </ul>
@@ -280,24 +280,24 @@ const Header = () => {
                     </li>
                     <li className="bg-white">
                       <Link
-                        href="how-contribute"
+                        href="csi-2024-how-to-engage"
                         className={`block py-2 px-3 text-gray-900 rounded bg-white md:border-0 md:p-0 ${
                           activeLink === 3 ? "text-purple-700" : ""
                         }`}
                         onClick={() => handleLinkClick(3)}
                       >
-                        How can you contribute?
+                        How to Enagage
                       </Link>
                     </li>
                     <li className="bg-white">
                       <Link
-                        href="interest-form"
+                        href="https://docs.google.com/forms/d/1eq7SGApyH7qT3UgunUMlJleY1uc_lP1TbtJr7bzkz0E/viewform?edit_requested=true"
                         className={`block py-2 px-3 text-gray-900 rounded bg-white md:border-0 md:p-0 ${
                           activeLink === 4 ? "text-purple-700" : ""
                         }`}
                         onClick={() => handleLinkClick(4)}
                       >
-                        Sign Up
+                        Register Now
                       </Link>
                     </li>
                   </ul>
@@ -307,7 +307,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    {/* </div> */}
+      {/* </div> */}
     </>
   )
 }

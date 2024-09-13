@@ -68,7 +68,7 @@ const Homepage = () => {
       <div className="custom-container lg:px-10 ">
         <div className="bg-[url('/images/home/homebg-img1.png')] bg-contain bg-bottom bg-no-repeat w-full lg:h-[120vh] h-[80vh] ">
           <Slider {...settings}>
-            <div className="mb-0 ">
+            <div className="mb-0">
               <div className="lg:grid grid-cols-2  h-full w-full rounded-lg-5">
                 <div className="rounded-lg-1">
                   <Image
@@ -89,12 +89,12 @@ const Homepage = () => {
                   </p>
                   <div className="text-end lg:me-14 lg:mt-5 lg:py-0 py-10 bg-[#4B2361]">
                     {/* Mobile View */}
-                    <div className="lg:hidden text-left px-4">
+                    <div className="lg:hidden text-left px-4 ">
                       {" "}
                       {/* Hide on large screens */}
                       <a
                         href="csi-2024"
-                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 mb-14 dark:focus:ring-yellow-900"
+                        className="inline-block focus:outline-none text-violet-600 font-normal rounded-3xl text-sm px-14 py-4 mb-14 "
                       >
                         View Details
                       </a>
@@ -102,11 +102,10 @@ const Homepage = () => {
 
                     {/* Desktop View */}
                     <div className="hidden lg:block text-right ">
-                    
                       {/* Hide on small screens */}
                       <a
                         href="csi-2024"
-                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4  dark:focus:ring-yellow-900"
+                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200  font-normal rounded-3xl text-sm px-14 py-4"
                       >
                         View Details
                       </a>
@@ -146,7 +145,7 @@ const Homepage = () => {
                 <button
                   onClick={handleOnClickShowPopup}
                   type="button"
-                  className=" flex focus:outline-none text-violet-600 absolute bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 focus:ring-4 focus:ring-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 me-2 mb-14 dark:focus:ring-yellow-900"
+                  className=" flex focus:outline-none text-violet-600 absolute bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 me-2 mb-14 "
                 >
                   Play the Video
                   <div className="px-1 w mt-1">
