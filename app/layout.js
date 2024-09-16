@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
         href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
         rel="stylesheet"
       />
+      <link rel="preload" href="critical.js" as="script" />
 
       <body className={inter.className}>
         {children}
