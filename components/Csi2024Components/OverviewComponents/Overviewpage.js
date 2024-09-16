@@ -160,7 +160,7 @@ const Overviewpage = () => {
         <div className="container mx-auto lg:p-0   p-4">
           <h1 className="text-3xl text-center pt-10 lg:px-14">
             Catalysing Social Impact
-            <span className=" text-[#7E3F98] text-center ">
+            <span className=" text-[#7E3F98] text-center">
               is all about celebrating India’s achievements and finding
               meaningful cross-sectoral opportunities
             </span>
@@ -169,7 +169,7 @@ const Overviewpage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:flex justify-center pt-10 lg:px-10 lg:gap-10">
             {Overview.map((items, index) => (
               <div key={index} className="p-4">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center ">
                   <Image
                     className="w-32 h-auto"
                     src={items.image}
@@ -185,7 +185,7 @@ const Overviewpage = () => {
             ))}
           </div>
 
-          <p className="text-center pt-10  lg:px-64 lg:text-xl text-2xl">
+          <p className="text-center pt-10 lg:w-[70%] mx-auto lg:text-xl text-2xl">
             By sparking innovation and boosting investments, we can embark on an
             inclusive and transformative journey towards the visionary goal of
             India@2047.
@@ -208,7 +208,7 @@ const Overviewpage = () => {
           <p className="mb-0"></p>
           <span className="text-[#FFC107]">
             visionaries, innovators, movers,
-          </span>{" "}
+          </span>
           and <span className="text-[#FFC107]">investors</span> with a mission
           to
         </p>
@@ -233,7 +233,7 @@ const Overviewpage = () => {
               </div>
               <div className=" flex justify-center items-center mb-14 lg:mb-0">
                 <p className="text-white">
-                  <span className="text-[#FFC107]">
+                  <span className="text-[#FFC107] font-semibold">
                     Supercharge Collective Action
                   </span>
                   <p className="mb-0"></p> Propel India’s journey towards
@@ -263,7 +263,7 @@ const Overviewpage = () => {
               </div>
               <div className=" flex justify-center items-center">
                 <p className="text-white">
-                  <span className="text-[#FFC107]">
+                  <span className="text-[#FFC107] font-semibold">
                     Engage in Insightful Discussions
                   </span>
                   <p className="mb-0"></p> Dive deep into key topics and
@@ -276,9 +276,9 @@ const Overviewpage = () => {
         </div>
 
         <div className="text-center pb-5  mt-10 text-white">
-          <p className="text-xl">
+          <p className="text-xl lg:w-[38%] mx-auto">
             Join us for an exciting and transformative event
-            <p className="mb-0"></p> that promises to spark ideas and drive
+             that promises to spark ideas and drive
             meaningful change
           </p>
         </div>

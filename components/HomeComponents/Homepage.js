@@ -92,23 +92,23 @@ const Homepage = () => {
                     <div className="lg:hidden text-left px-4 ">
                       {" "}
                       {/* Hide on large screens */}
-                      <a
+                      <Link
                         href="csi-2024"
                         className="inline-block focus:outline-none text-violet-600 font-normal rounded-3xl text-sm px-14 py-4 mb-14 "
                       >
                         View Details
-                      </a>
+                      </Link>
                     </div>
 
                     {/* Desktop View */}
                     <div className="hidden lg:block text-right ">
                       {/* Hide on small screens */}
-                      <a
+                      <Link
                         href="csi-2024"
                         className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200  font-normal rounded-3xl text-sm px-14 py-4"
                       >
                         View Details
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

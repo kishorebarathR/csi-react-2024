@@ -174,7 +174,7 @@ const Header = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M4 6h16M4 12h16m-7 6h7"
+                        d="M4 6h16M4 12h16M4 18h16"
                       />
                     </svg>
                   )}
@@ -292,12 +292,12 @@ const Header = () => {
                     <li className="bg-white">
                       <Link
                         href="https://docs.google.com/forms/d/1eq7SGApyH7qT3UgunUMlJleY1uc_lP1TbtJr7bzkz0E/viewform?edit_requested=true"
-                        className={`block py-2 px-3 text-gray-900 rounded bg-white md:border-0 md:p-0 ${
+                        className={`block w-44 -py-2  text-center mt-3 focus:outline-none text-black bg-[#F3D479] hover:text-[#7e3f98]  font-normal rounded-3xl text-sm px-8 py-3   ${
                           activeLink === 4 ? "text-purple-700" : ""
                         }`}
                         onClick={() => handleLinkClick(4)}
                       >
-                        Register Now
+                        Subscribe Now
                       </Link>
                     </li>
                   </ul>

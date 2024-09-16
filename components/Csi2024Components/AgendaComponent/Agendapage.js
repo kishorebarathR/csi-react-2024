@@ -40,7 +40,7 @@ const Agendapage = () => {
       </style>
       <div className="">
         <div className="relative bg-[url('/images/agenda/Agenda-bg-img.png')] bg-cover bg-bottom bg-no-repeat w-full h-full custom-container">
-          <div className="w-full h-full">
+          <div className="w-full h-full ">
             <div className="pt-16 flex justify-center items-center mx-3">
               <Image
                 className="object-cover lg:w-[54%]  h-full  "
@@ -54,7 +54,7 @@ const Agendapage = () => {
             <p className="text-4xl  text-[#7E3F98] text-center font-semibold pt-14">
               AGENDA
             </p>
-            <div className="bg-white rounded-lg mx-4 p-3 lg:w-[40%] sm:mx-auto  mt-10 text-center border border-yellow-200">
+            <div className="bg-white  rounded-lg mx-4 p-3 lg:w-[40%] sm:mx-auto  mt-10 text-center border border-yellow-200">
               <p className="text-xs sm:text-base font-semibold">
                 <span className="text-[#8C54A3]">Venue:</span> Dr. Ambedkar
                 International Centre, Janpath, New Delhi
@@ -64,7 +64,7 @@ const Agendapage = () => {
               </p>
             </div>
 
-            <p className="text-center lg:w-[55%] px-1 mx-auto pt-10">
+            <p className="text-center lg:w-[50%] px-1 mx-auto pt-10">
               Discover diverse themes such as Grounded Climate Response,
               Innovative Financing, and Fidelity & Quality, covering topics that
               range from resilience-building for businesses to forging

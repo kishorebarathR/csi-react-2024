@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import { X } from "lucide-react"
 import Image from "next/image"
-// Modal Component
+
 const Modal = ({ isOpen, onClose, content }) => {
   if (!isOpen) return null
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white shadow-lg max-w-xl  p-3 mx-4 flex flex-col items-end">
+      <div className="bg-white shadow-lg max-w-xl  px-4 py-2 mx-4 flex flex-col items-end">
         <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
           <X size={24} />
         </button>
@@ -34,7 +34,7 @@ const Day2 = () => {
             <tr className="flex lg:flex-col flex-row">
               <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[8%] bg-gradient-to-r from-[#2ecc71] to-[#3498db] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
-                  <Image
+                  <Image  
                     src="/images/agenda/clock.svg"
                     width={24}
                     height={24}
@@ -86,26 +86,26 @@ const Day2 = () => {
         <table className="  text-sm font-semibold lg:w-[1320px]">
           <thead>
             <tr>
-              <th className=" p-3 text-left w-[8%]">
+              <th className=" px-4 py-2 text-left w-[10%]">
                 
               </th>
-              <th className=" p-3 text-left w-[60%]">
+              <th className=" px-4 py-2 text-left w-[60%]">
              
               </th>
-              <th className=" p-3 text-left w-[15%]">
+              <th className=" px-4 py-2 text-left w-[14%]">
               
               </th>
-              <th className=" p-3 text-left w-[20%]">
+              <th className=" px-4 py-2 text-left w-[20%]">
               
               </th>
             </tr>
           </thead>
           <tbody className="bg-white ">
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 10:30-11:15
               </td>
-              <td className="border border-gray-300 p-3">
+              <td className="border border-gray-300 px-4 py-2">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -119,7 +119,7 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Presenter:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -130,14 +130,14 @@ const Day2 = () => {
                  Opening Plenary & CSI Awards
                 </button>
               </td>
-              <td className="border border-gray-300 lg:p-3">Bhim, Ground floor</td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 "></td>
+              <td className="border border-gray-300 lg:px-4 py-2">Bhim, Ground floor</td>
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 "></td>
             </tr>
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 11:30-13:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
               <button
                   className="text-[#8458B9] underline "
                   onClick={() =>
@@ -151,10 +151,10 @@ const Day2 = () => {
                       </p>
                       <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                       <div className="flex space-x-4">
-                        <div className=" p-3 w-40 h-32 flex items-center justify-center">
+                        <div className=" px-4 py-2 w-40 h-32 flex items-center justify-center">
                           <Image src="/images/agenda/upfront.svg" alt="Nexus of Good logo" width={500} height={500} className="w-full" />
                         </div>
-                        <div className=" p-3 w-40 h-32 flex items-center justify-center">
+                        <div className=" px-4 py-2 w-40 h-32 flex items-center justify-center">
                           <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                         </div>
                       </div>
@@ -178,13 +178,13 @@ const Day2 = () => {
                    </p>
                    <h2 className="text-lg md:text-xl font-semibold mb-2">Collaborator:</h2>
                   <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                  <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                  <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                     <Image  src="/images/agenda/community.png" alt="Common logo" width={500}  height={500} className="w-full"/>
                   </div>
-                 <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                 <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                     <Image src="/images/agenda/vartha.png" alt="Vrutti logo" width={500} height={500} className="w-full"/>
                  </div>
-                 <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
+                 <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
                    <Image src="/images/agenda/cms.png" alt="CMS logo"   width={500} height={500} className="w-full" />
                </div>
                 </div>
@@ -203,7 +203,7 @@ const Day2 = () => {
                   className="text-[#8458B9] underline"
                   onClick={() =>
                  handleLinkClick(
-                  <div className="max-w-4xl   p-1 bg-white">
+                  <div className="max-w-4xl p-1 bg-white">
                   <h2 className="text-xl font-bold mb-2">
                   Lessons from Scaling with Government
                   </h2>
@@ -212,10 +212,10 @@ const Day2 = () => {
                   </p>
                   <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                   <div className="flex space-x-4">
-                    <div className=" p-3 w-40 h-32 flex items-center justify-center">
+                    <div className=" px-4 py-2 w-40 h-32 flex items-center justify-center">
                       <Image src="/images/agenda/nexus.png" alt="Nexus of Good logo" width={500} height={500} className="w-full" />
                     </div>
-                    <div className=" p-3 w-40 h-32 flex items-center justify-center">
+                    <div className=" px-4 py-2 w-40 h-32 flex items-center justify-center">
                       <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                     </div>
                   </div>
@@ -239,16 +239,16 @@ const Day2 = () => {
                    </p>
                    <h2 className="text-lg md:text-xl font-semibold mb-2">Collaborator:</h2>
                    <div className="grid grid-cols-2 md:grid-cols-4">
-               <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center  ">
+               <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center  ">
                 <Image src="/images/agenda/blended.png" alt="Common logo" width={500} height={500} className="w-full"/>
                </div>
-              <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
+              <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
                <Image src="/images/agenda/waterfield.png" alt="Vrutti logo" width={500} height={500} className="w-full"/>
               </div>
-              <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
+              <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
                 <Image src="/images/agenda/gamer.png" alt="CMS logo" width={500} height={500} className="w-full"/>
               </div>
-            <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
+            <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center">
                <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full"/>
            </div>
             </div>
@@ -261,15 +261,15 @@ const Day2 = () => {
                   </div>
                 </div>
               </td>
-              <td className="border border-gray-300 lg:p-3">
-                <div className="">Bhim, Ground floor</div>
+              <td className="border border-gray-300 lg:px-4 py-2">
+                <div className="mt-6">Bhim, Ground floor</div>
                 <div className="mt-6">Samrastha, Ground floor </div>
                 <div className="mt-6">VIP Lounge,First floor </div>
                 <div className="mt-6">Conference 1, Second floor</div>
                 <div className="mt-6">Conference 2, Second floor </div>
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
-                <div>Side Event</div>
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
+                <div className="mt-6">Side Event</div>
                 <div className="mt-6 text-orange-600 ">
                   Grounded Climate Response
                 </div>
@@ -285,10 +285,10 @@ const Day2 = () => {
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 12:00-13:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
               <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -302,10 +302,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/catalyst-2030.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -316,19 +316,19 @@ const Day2 = () => {
                 Measuring the Impact of Shared Value Initiatives
                 </button>       
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 <div>Nalanda, Ground floor</div>
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div>Side Event</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 11:30-13:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
               <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -342,10 +342,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/mistfits.jpg" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -370,10 +370,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/si.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -398,10 +398,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/phicus.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -413,12 +413,12 @@ const Day2 = () => {
                 </button>
                 </div>
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 <div className="">Samrastha, Ground floor</div>
                 <div className="mt-6">VIP Lounge, First floor </div>
                 <div className="mt-6">Conference 1, Second floor </div>
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div>Side Event</div>
                 <div className="mt-6 text-orange-600 ">
                   Grounded Climate Response
@@ -429,10 +429,10 @@ const Day2 = () => {
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 12:30-14:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 Lunch at VIP Dining (Available from 12:30 PM - 2:30 PM)
                 <div className="mt-6">
                   Tea/Coffee (Available from 9:30 AM-6:00 PM. Snacks served
@@ -440,19 +440,19 @@ const Day2 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 VIP Dining, First floor
                 <div className="mt-6">Foyer, First floor</div>
               </td>
 
-              <td className="border border-gray-300 lg:p-3"></td>
+              <td className="border border-gray-300 lg:px-4 py-2"></td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 14:30-15:00
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                
                 <button
     className="text-[#8458B9] underline"
@@ -470,13 +470,13 @@ const Day2 = () => {
           </p>
           <h2 className="text-lg md:text-xl font-semibold mb-2">Collaborator:</h2>
           <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
              <Image  src="/images/agenda/swasti.png" alt="Common logo" width={500}  height={500} className="w-full"/>
           </div>
-          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
               <Image src="/images/agenda/imd.jpg" alt="Vrutti logo" width={500} height={500} className="w-full"/>
            </div>
-           <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
+           <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
               <Image src="/images/agenda/cms.png" alt="CMS logo"   width={500} height={500} className="w-full" />
           </div>
           </div>
@@ -487,19 +487,19 @@ const Day2 = () => {
             Precision Action for Climate and Health - Launch with IMD
          </button>
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 <div>Bhim, Ground floor </div>
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div>Side Event</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 14:30-17:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
               <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -513,10 +513,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/catalyst.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -527,53 +527,53 @@ const Day2 = () => {
                 Wicked Solutions Show
                 </button>
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 <div>Bhim, Ground floor </div>
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div>Side Event</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 12:30-14:30
               </td>
-              <td className="border border-gray-300 p-3  ">
+              <td className="border border-gray-300 px-4 py-2  ">
                 Market Access for Farmers – Effective Institutional Framework to
                 Make the Solution Work at Scale; Going<p className="mb-0"></p>
                 Beyond Fitting Solutions Within the Framework
               </td>
 
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 Conference 2, Second floor
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div> Innovative Financing</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 14:30-16:00
               </td>
-              <td className="border border-gray-300 lg:p-3 ">
+              <td className="border border-gray-300 lg:px-4 py-2 ">
                 Data for Decisions and Stories
               </td>
 
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div> Implementation Fidelity & Quality</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 16:00-17:30
               </td>
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
               <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -587,10 +587,10 @@ const Day2 = () => {
                         </p>
                         <h2 className="text-xl font-semibold mb-2">Collaborator:</h2>                     
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                        <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                        <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/buzzwomen.jpg" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div> 
-                          <div className="p-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="px-4 py-2 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image src="/images/agenda/cms.png" alt="CMS logo" width={500} height={500} className="w-full " />
                           </div>                 
                         </div>
@@ -603,21 +603,21 @@ const Day2 = () => {
                
               </td>
 
-              <td className="border border-gray-300 lg:p-3">
+              <td className="border border-gray-300 lg:px-4 py-2">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div> Innovative Financing</div>
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 lg:p-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2 text-green-600 ">
                 17:30-18:15
               </td>
-              <td className="border border-gray-300 lg:p-3 ">Closing Plenary</td>
+              <td className="border border-gray-300 lg:px-4 py-2 ">Closing Plenary</td>
 
-              <td className="border border-gray-300 lg:p-3">Bhim, Ground floor</td>
-              <td className="border border-gray-300 lg:p-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-2">Bhim, Ground floor</td>
+              <td className="border border-gray-300 lg:px-4 py-2 text-orange-600 ">
                 <div></div>
               </td>
             </tr>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Aboutpage = () => {
     return (
@@ -20,24 +21,24 @@ const Aboutpage = () => {
               The first forum was held in 2019 using the Solutions Circle
               approach - in hybrid and physical spaces in Bengaluru and morphed
               into the
-              <a
+              <Link
                 href="https://covidactioncollab.org/"
                 target="_blank"
                 class="text-blue-500 hover:text-blue-700"
               >
                 #COVIDActionCollab
-              </a>
+              </Link>
               for pandemic response during 2020-2022.
             </li>
             <li>
               In 2022, the #COVIDActionCollab further transformed into
-              <a
+              <Link
                 href="https://communityactioncollab.org/"
                 target="_blank"
                 class="text-blue-500 hover:text-blue-700"
               >
                 #CommunityActionCollab
-              </a>
+              </Link>
               to build pandemic preparedness and resilience.
             </li>
           </ul>
