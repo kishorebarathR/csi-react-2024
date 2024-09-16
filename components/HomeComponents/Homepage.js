@@ -66,7 +66,7 @@ const Homepage = () => {
   return (
     <>
       <div className="custom-container lg:px-10 ">
-        <div className="bg-[url('/images/home/homebg-img1.png')] bg-contain bg-bottom bg-no-repeat w-full lg:h-[120vh] h-[80vh] ">
+        <div className="bg-[url('/images/home/homebg-img1.png')] bg-contain bg-bottom bg-no-repeat w-full lg:h-[120vh] h-[80vh]  ">
           <Slider {...settings}>
             <div className="mb-0">
               <div className="lg:grid grid-cols-2  h-full w-full rounded-lg-5">
@@ -75,6 +75,7 @@ const Homepage = () => {
                     className="w-full h-full bg-white"
                     src="/images/home/CSI_banner-img.jpg"
                     alt="image description"
+                    loading="lazy"
                     height={400}
                     width={800}
                   />
@@ -118,6 +119,7 @@ const Homepage = () => {
                   className="w-40 h-40 lg:p-4 absolute bottom-0  lg:right-0 "
                   src="/images/home/constellation_3.png"
                   alt="image description"
+                  loading="lazy"
                   height={400}
                   width={400}
                 />
@@ -127,7 +129,7 @@ const Homepage = () => {
             {/* Item 2 */}
 
             <div className="  lg:relative lg:-my-20 ">
-              <video className="lg:h-full w-full " autoPlay muted loop>
+              <video className="lg:h-full w-full lozad" autoPlay muted loop>
                 <source src="/vedio/Homepage-vedio.mp4" type="video/mp4" />
               </video>
 
@@ -194,7 +196,7 @@ const Homepage = () => {
                     <div className="flex justify-center items-center h-full mt-5">
                       <div className="flex flex-col lg:flex-row  ">
                         <div className="w-full ">
-                          <video className="h-full w-full" autoPlay muted loop>
+                          <video className="h-full w-full lozad" autoPlay muted loop>
                             <source
                               src="/vedio/Homepage-vedio.mp4"
                               type="video/mp4"
