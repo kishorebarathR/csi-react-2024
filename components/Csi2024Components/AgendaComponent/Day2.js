@@ -94,7 +94,9 @@ const Day2 = () => {
           </thead>
           <tbody className="bg-white ">
             <tr>
-              <td className="border border-gray-300 px-4 py-3 tetx-green-600">10:30-11:15</td>
+              <td className="border border-gray-300 px-4 py-3 tetx-green-600">
+                10:30-11:15
+              </td>
               <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
@@ -129,11 +131,18 @@ const Day2 = () => {
                   Opening Plenary & CSI Awards
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">Bhim, Ground floor</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Bhim, Ground floor
+              </td>
               <td className="border border-gray-300 px-4 py-3"></td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600" rowspan="5">11:30-13:30</td>
+              <td
+                className="border border-gray-300 px-4 py-3 text-green-600"
+                rowspan="5"
+              >
+                11:30-13:30
+              </td>
               <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline "
@@ -183,8 +192,12 @@ const Day2 = () => {
                   Thriving Workforce
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">Bhim, Ground floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">Side Event</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Bhim, Ground floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
+                Side Event
+              </td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-3">
@@ -242,14 +255,24 @@ const Day2 = () => {
                   </button>
                 </div>
               </td>
-              <td className="border border-gray-300 px-4 py-3">Samrastha, Ground floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Grounded Climate Response</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Samrastha, Ground floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Grounded Climate Response
+              </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3">Mainstreaming Capacity Building (Invite Only)</td>
-              <td className="border border-gray-300 px-4 py-3">VIP Lounge, First floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Implementation - Fidelity & Quality</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Mainstreaming Capacity Building (Invite Only)
+              </td>
+              <td className="border border-gray-300 px-4 py-3">
+                VIP Lounge, First floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Implementation - Fidelity & Quality
+              </td>
             </tr>
 
             <tr>
@@ -298,8 +321,12 @@ const Day2 = () => {
                 </button>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">Conference 1, Second floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Implementation Fidelity & Quality</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Conference 1, Second floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Implementation Fidelity & Quality
+              </td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-3">
@@ -371,15 +398,19 @@ const Day2 = () => {
                   </button>
                 </div>
               </td>
-              <td className="border border-gray-300 px-4 py-3">Conference 2, Second floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Innovative Financing</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Conference 2, Second floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Innovative Financing
+              </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 12:30-13:30
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -423,19 +454,22 @@ const Day2 = () => {
                   Measuring the Impact of Shared Value Initiatives
                 </button>
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
-                <div>Nalanda, Ground floor</div>
+              <td className="border border-gray-300 px-4 py-3">
+                Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
-                <div>Side Event</div>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
+                Side Event
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600" rowspan="3">
+              <td
+                className="border border-gray-300 px-4 py-3 text-green-600"
+                rowspan="3"
+              >
                 14:30 - 17:30
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -483,8 +517,12 @@ const Day2 = () => {
                 </button>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">Samrastha, Ground floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">Side Event</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Samrastha, Ground floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
+                Side Event
+              </td>
             </tr>
 
             <tr>
@@ -535,8 +573,12 @@ const Day2 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">VIP Lounge, First floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Grounded Climate Response</td>
+              <td className="border border-gray-300 px-4 py-3">
+                VIP Lounge, First floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Grounded Climate Response
+              </td>
             </tr>
 
             <tr>
@@ -591,8 +633,12 @@ const Day2 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">Conference 1, Second floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Implementation Fidelity & Quality</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Conference 1, Second floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Implementation Fidelity & Quality
+              </td>
             </tr>
 
             <tr>
@@ -622,10 +668,10 @@ const Day2 = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 14:30-15:00
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -682,19 +728,19 @@ const Day2 = () => {
                   Precision Action for Climate and Health - Launch with IMD
                 </button>
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <div>Bhim, Ground floor </div>
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
                 <div>Side Event</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 14:30-17:30
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -742,16 +788,16 @@ const Day2 = () => {
                   Wicked Solutions Show
                 </button>
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 <div>Bhim, Ground floor </div>
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
                 <div>Side Event</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 14:30-16:00
               </td>
               <td className="border border-gray-300 px-4 py-3  ">
@@ -760,26 +806,26 @@ const Day2 = () => {
                 Beyond Fitting Solutions Within the Framework
               </td>
 
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 Conference 2, Second floor
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
                 <div> Innovative Financing</div>
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 14:30-16:00
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 ">
+              <td className="border border-gray-300 px-4 py-3 ">
                 Data for Decisions and Stories
               </td>
 
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
                 <div> Implementation Fidelity & Quality</div>
               </td>
             </tr>
@@ -839,22 +885,26 @@ const Day2 = () => {
                 </button>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">Nalanda, Ground floor</td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">Innovative Financing</td>
+              <td className="border border-gray-300 px-4 py-3">
+                Nalanda, Ground floor
+              </td>
+              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+                Innovative Financing
+              </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
                 17:30-18:15
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 ">
+              <td className="border border-gray-300 px-4 py-3 ">
                 Closing Plenary
               </td>
 
-              <td className="border border-gray-300 lg:px-4 py-3">
+              <td className="border border-gray-300 px-4 py-3">
                 Bhim, Ground floor
               </td>
-              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
                 <div></div>
               </td>
             </tr>
