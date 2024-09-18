@@ -545,7 +545,7 @@ const Day1 = () => {
 
             <tr>
               <td
-                className="border-gray-300 px-4 py-3 text-green-600"
+                className="border border-gray-300 px-4 py-3 text-green-600"
                 rowspan="2"
               >
                 12:30-14:30

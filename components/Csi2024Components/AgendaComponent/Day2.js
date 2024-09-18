@@ -643,18 +643,18 @@ const Day2 = () => {
 
             <tr>
               <td
-                className="border-gray-300 px-4 py-3 text-green-600"
+                className="border-gray-300 border px-4 py-3 text-green-600"
                 rowspan="2"
               >
                 12:30-14:30
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border  border-gray-300 px-4 py-3">
                 Lunch at VIP Dining (Available from 12:30 PM - 2:30 PM)
               </td>
               <td className="border border-gray-300 px-4 py-3">
                 VIP Dining, First floor
               </td>
-              <td className="border-r border-l border-gray-300 px-4 py-3"></td>
+              <td className="border border-red-300 px-4 py-3"></td>
             </tr>
             <tr>
               <td className="border border-gray-300 px-4 py-3">
@@ -664,7 +664,7 @@ const Day2 = () => {
               <td className="border border-gray-300 px-4 py-3">
                 Foyer, First floor
               </td>
-              <td className="border-r border-gray-300 px-4 py-3"></td>
+              <td className="border border-gray-300 px-4 py-3"></td>
             </tr>
 
             <tr>
