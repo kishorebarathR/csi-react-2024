@@ -553,7 +553,7 @@ const Filmspage = () => {
         </div>
       </div>
 
-      <div className=" max-w-4xl mx-auto  ">
+      <div className=" max-w-4xl mx-auto mb-7 ">
         <div className="bg-white p-6 lg:mb-4 flex flex-col md:flex-row  gap-6  rounded-md ">
           <div className="flex-1 flex items-center justify-center">
             <div className="relative w-64 h-80">
