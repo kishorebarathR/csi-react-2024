@@ -31,7 +31,7 @@ const Day1 = () => {
       <div className=" mb-10">
         <table className=" text-sm font-semibold lg:w-[1320px]  ">
           <thead className="">
-            <tr className="flex lg:flex-col flex-row">
+            <tr className="flex lg:flex-col flex-row ">
               <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[10%] bg-gradient-to-r from-[#2ecc71] to-[#3498db] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
                   <Image
@@ -83,32 +83,32 @@ const Day1 = () => {
             </tr>
           </thead>
         </table>
-        <table className="  text-sm font-semibold lg:w-[1320px]">
+        <table className="  text-sm font-semibold lg:w-[1320px] mx-3">
           <thead>
             <tr>
-              <th className=" px-4 py-3 text-left w-[10%]"></th>
-              <th className=" px-4 py-3 text-left w-[60%]"></th>
-              <th className=" px-4 py-3 text-left w-[15%]"></th>
-              <th className=" px-4 py-3 text-left w-[15%]"></th>
+              <th className=" lg:px-4 py-3 text-left w-[10%]"></th>
+              <th className=" lg:px-4 py-3 text-left w-[60%]"></th>
+              <th className=" lg:px-4 py-3 text-left w-[15%]"></th>
+              <th className=" lg:px-4 py-3 text-left w-[15%]"></th>
             </tr>
           </thead>
           <tbody className="bg-white ">
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600">
                 10:30-12:00
               </td>
-              <td className="border border-gray-300 px-4 py-3">Inaugural</td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">Inaugural</td>
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Bhim, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600"></td>
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600"></td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600">
                 12:00-13:00
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline "
                   onClick={() =>
@@ -127,7 +127,7 @@ const Day1 = () => {
                           Collaborator:
                         </h2>
                         <div className="flex space-x-4">
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/nexus.png"
                               alt="Nexus of Good logo"
@@ -136,7 +136,7 @@ const Day1 = () => {
                               className="w-full"
                             />
                           </div>
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -154,19 +154,19 @@ const Day1 = () => {
                   Government
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 VIP Dining, First floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Implementation Fidelity & Quality
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600">
                 12:00-13:00
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -195,7 +195,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -214,23 +214,23 @@ const Day1 = () => {
                   </button>
                 </div>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Bhim, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Side Event
               </td>
             </tr>
 
             <tr>
               <td
-                className="border border-gray-300 px-4 py-3 text-green-600"
+                className="border border-gray-300 lg:px-4 py-3 text-green-600"
                 rowspan="4"
               >
                 12:00-13:30
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -252,7 +252,7 @@ const Day1 = () => {
                           Presenter:
                         </h2>
                         <div className="flex space-x-4">
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/swasti.png"
                               alt="CMS logo"
@@ -261,7 +261,7 @@ const Day1 = () => {
                               className="w-full "
                             />
                           </div>
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -280,16 +280,16 @@ const Day1 = () => {
                 </button>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Side Event
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -309,7 +309,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/socion.png"
                                 alt="CMS logo"
@@ -318,7 +318,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -337,15 +337,15 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Conference 1, Second floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Implementation - Fidelity & Quality
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -369,7 +369,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/british.png"
                                 alt="CMS logo"
@@ -378,7 +378,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -398,15 +398,15 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Samarthya, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Innovative Financing
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="mt-6">
                   <button
                     className="text-[#8458B9] underline"
@@ -429,7 +429,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                            <div className="px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                            <div className="lg:px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                               <Image
                                 src="/images/agenda/common.png"
                                 alt="Common logo"
@@ -438,7 +438,7 @@ const Day1 = () => {
                                 className="w-full"
                               />
                             </div>
-                            <div className="px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                            <div className="lg:px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                               <Image
                                 src="/images/agenda/vrutti.png"
                                 alt="Vrutti logo"
@@ -447,7 +447,7 @@ const Day1 = () => {
                                 className="w-full"
                               />
                             </div>
-                            <div className="px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
+                            <div className="lg:px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-2 md:col-span-1">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -467,19 +467,19 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 VIP lounge, First floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Innovative Financing
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
                 12:00-16:00
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -499,7 +499,7 @@ const Day1 = () => {
                           Collaborator:
                         </h2>
                         <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                          <div className="px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                          <div className="lg:px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                             <Image
                               src="/images/agenda/sap.png"
                               alt="CMS logo"
@@ -508,7 +508,7 @@ const Day1 = () => {
                               className="w-full "
                             />
                           </div>
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center col-span-1">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center col-span-1">
                             <Image
                               src="/images/agenda/sattva.jpg"
                               alt="CMS logo"
@@ -517,7 +517,7 @@ const Day1 = () => {
                               className="w-full "
                             />
                           </div>
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -535,45 +535,45 @@ const Day1 = () => {
                   Procurement in India
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Conference 2, Second floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600 ">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 ">
                 Side Event
               </td>
             </tr>
 
             <tr>
               <td
-                className="border border-gray-300 px-4 py-3 text-green-600"
+                className="border border-gray-300 lg:px-4 py-3 text-green-600"
                 rowspan="2"
               >
                 12:30-14:30
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Lunch at VIP Dining (Available from 12:30 PM - 2:30 PM)
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 VIP Dining, First floor
               </td>
-              <td className="border-r border-l border-gray-300 px-4 py-3"></td>
+              <td className="border-r border-l border-gray-300 lg:px-4 py-3"></td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Tea/Coffee (Available from 9:30 AM - 6:00 PM, Snacks served
                 twice AM and PM)
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Foyer, First floor
               </td>
-              <td className="border-r border-gray-300 px-4 py-3"></td>
+              <td className="border-r border-gray-300 lg:px-4 py-3"></td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600">
                 14:30-16:00
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -591,7 +591,7 @@ const Day1 = () => {
                           Collaborator:
                         </h2>
                         <div className="flex space-x-4">
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -608,23 +608,23 @@ const Day1 = () => {
                   Social Protection Coalition Launch
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Implementation Fidelity & Quality
               </td>
             </tr>
 
             <tr>
               <td
-                className="border border-gray-300 px-4 py-3 text-green-600"
+                className="border border-gray-300 lg:px-4 py-3 text-green-600"
                 rowspan="4"
               >
                 14:30-18:30
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -643,7 +643,7 @@ const Day1 = () => {
                           Collaborator:
                         </h2>
                         <div className="flex space-x-4">
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/asra.png"
                               alt="CMS logo"
@@ -652,7 +652,7 @@ const Day1 = () => {
                               className="w-full "
                             />
                           </div>
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -670,15 +670,15 @@ const Day1 = () => {
                   Perspective
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Bhim, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Grounded Climate Response
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -700,7 +700,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                            <div className="px-4 py-3 w-40 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                            <div className="lg:px-4 py-3 w-40 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                               <Image
                                 src="/images/agenda/icmai.png"
                                 alt="CMS logo"
@@ -709,7 +709,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center col-span-1">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center col-span-1">
                               <Image
                                 src="/images/agenda/catalyst.png"
                                 alt="CMS logo"
@@ -718,7 +718,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -738,15 +738,15 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Samrastha, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Innovative Financing
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -766,7 +766,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="grid grid-cols-2 gap-2 md:flex md:flex-row md:space-x-4">
-                            <div className="px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
+                            <div className="lg:px-4 py-3 w-32 h-32 md:w-40 md:h-32 flex items-center justify-center col-span-1">
                               <Image
                                 src="/images/agenda/community.png"
                                 alt="CMS logo"
@@ -775,7 +775,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center  col-span-1">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center  col-span-1">
                               <Image
                                 src="/images/agenda/farm.png"
                                 alt="CMS logo"
@@ -784,7 +784,7 @@ const Day1 = () => {
                                 className="w-full "
                               />
                             </div>
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center col-span-2 md:col-span-1">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -803,15 +803,15 @@ const Day1 = () => {
                   </button>
                 </div>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 VIP Lounge, First Floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Grounded Climate Response
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -831,7 +831,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/future.png"
                                 alt="CMS logo"
@@ -841,7 +841,7 @@ const Day1 = () => {
                               />
                             </div>
 
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -860,22 +860,22 @@ const Day1 = () => {
                   </button>
                 </div>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Conference 1, Second floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Implementation - Fidelity & Quality
               </td>
             </tr>
 
             <tr>
               <td
-                className="border border-gray-300 px-4 py-3 text-green-600"
+                className="border border-gray-300 lg:px-4 py-3 text-green-600"
                 rowspan="3"
               >
                 16:00-18:30
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <button
                   className="text-[#8458B9] underline"
                   onClick={() =>
@@ -893,7 +893,7 @@ const Day1 = () => {
                           Collaborator:
                         </h2>
                         <div className="flex space-x-4">
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cphc.png"
                               alt="CMS logo"
@@ -903,7 +903,7 @@ const Day1 = () => {
                             />
                           </div>
 
-                          <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                          <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                             <Image
                               src="/images/agenda/cms.png"
                               alt="CMS logo"
@@ -920,15 +920,15 @@ const Day1 = () => {
                   Integrated Climate and Health Response
                 </button>
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 VIP Dining, First floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Grounded Climate Response
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -953,7 +953,7 @@ const Day1 = () => {
                             Collaborator:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/head.jpeg"
                                 alt="CMS logo"
@@ -963,7 +963,7 @@ const Day1 = () => {
                               />
                             </div>
 
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -983,15 +983,15 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Conference 2, Second floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Implementation - Fidelity & Quality
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 <div className="">
                   <button
                     className="text-[#8458B9] underline"
@@ -1015,7 +1015,7 @@ const Day1 = () => {
                             Presenter:
                           </h2>
                           <div className="flex space-x-4">
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/swasti.png"
                                 alt="CMS logo"
@@ -1025,7 +1025,7 @@ const Day1 = () => {
                               />
                             </div>
 
-                            <div className=" px-4 py-3 w-40 h-32 flex items-center justify-center">
+                            <div className=" lg:px-4 py-3 w-40 h-32 flex items-center justify-center">
                               <Image
                                 src="/images/agenda/cms.png"
                                 alt="CMS logo"
@@ -1045,25 +1045,25 @@ const Day1 = () => {
                 </div>
               </td>
 
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Nalanda, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600">
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600">
                 Side Event
               </td>
             </tr>
 
             <tr>
-              <td className="border border-gray-300 px-4 py-3 text-green-600 ">
+              <td className="border border-gray-300 lg:px-4 py-3 text-green-600 ">
                 18:30-19:15
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Closing Plenary
               </td>
-              <td className="border border-gray-300 px-4 py-3">
+              <td className="border border-gray-300 lg:px-4 py-3">
                 Bhim, Ground floor
               </td>
-              <td className="border border-gray-300 px-4 py-3 text-orange-600 "></td>
+              <td className="border border-gray-300 lg:px-4 py-3 text-orange-600 "></td>
             </tr>
           </tbody>
         </table>
