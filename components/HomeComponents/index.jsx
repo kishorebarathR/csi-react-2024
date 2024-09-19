@@ -5,8 +5,8 @@ import Seo from "@/components/SeoComponents/Seo"
 const index = () => {
   const title = "CSI"
   const description =
-    " Social impact catalysis is the catalyst for a ripple effect of positive change, transcending boundaries and leaving a legacy of hope.The first forum was held in 2019 using the Solut"
-  const path = "https://catalysingsocialimpact.in/csi-2024.html"
+    " Catalysing Social Impact [CSI] is a living forum hosted by the Catalyst Group for thinkers, doers, and investors who come together to ignite positive changes in the field of social impact through strategic initiatives."
+  const path = "csi-react-2024"
   const metaImage = ""
   return (
     <div>
