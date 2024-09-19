@@ -2,6 +2,7 @@ import React from "react"
 import Homepage from "./Homepage"
 import Aboutpage from "./Aboutpage"
 import Seo from "@/components/SeoComponents/Seo"
+
 const index = () => {
   const title = "CSI"
   const description =

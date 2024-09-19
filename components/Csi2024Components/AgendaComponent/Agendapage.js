@@ -51,20 +51,20 @@ const Agendapage = () => {
               />
             </div>
 
-            <p className="text-4xl  text-[#7E3F98] text-center font-semibold pt-14">
+            <h1 className="text-4xl  text-[#7E3F98] text-center font-semibold pt-14">
               AGENDA
-            </p>
+            </h1>
             <div className="bg-white  rounded-lg mx-4 p-3 lg:w-[40%] sm:mx-auto  mt-10 text-center border border-yellow-200">
-              <p className="text-xs sm:text-base font-semibold">
+              <h2 className="text-xs sm:text-base font-semibold">
                 <span className="text-[#8C54A3]">Venue:</span> Dr. Ambedkar
                 International Centre, Janpath, New Delhi
-              </p>
-              <p className="text-xs sm:text-base font-semibold">
+              </h2>
+              <h2 className="text-xs sm:text-base font-semibold">
                 August 1 and 2, 2024
-              </p>
+              </h2>
             </div>
 
-            <p className="text-center lg:w-[50%] px-1 mx-auto pt-10">
+            <h3 className="text-center lg:w-[50%] px-1 mx-auto pt-10">
               Discover diverse themes such as Grounded Climate Response,
               Innovative Financing, and Fidelity & Quality, covering topics that
               range from resilience-building for businesses to forging
@@ -72,7 +72,7 @@ const Agendapage = () => {
               seasoned professional, an emerging leader, or an enthusiast for
               social impact, CSI 2024 offers invaluable opportunities to learn,
               network, and contribute to positive change.
-            </p>
+            </h3>
             <p className="text-center lg:w-[55%] px-1 mx-auto pt-6">
               View our events schedule below and plan your participation to
               maximise your CSI 2024 experience.

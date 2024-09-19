@@ -2,8 +2,9 @@ import React from "react"
 import Agendapage from "./Agendapage"
 
 import Seo from "@/components/SeoComponents/Seo"
+
 const Index = () => {
-  const title = "CSI"
+  const title = "CSI 2024 | CSI"
   const description ="Discover diverse themes such as Grounded Climate Response, Innovative Financing, and Fidelity"
   const path = "csi-agenda"
   const metaImage = ""

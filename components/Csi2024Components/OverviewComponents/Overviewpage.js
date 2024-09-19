@@ -84,9 +84,9 @@ const Overviewpage = () => {
                     />
                   </div>
                   <div className="text-xs mb-3 mt-2">
-                    <p className="p-1 sm:text-sm -mt-12 ms-8">
+                    <h2 className="p-1 sm:text-sm -mt-12 ms-8">
                       August 1 and 2, 2024
-                    </p>
+                    </h2>
                   </div>
                   <div className="mb-4 -mt-10 ">
                     <Image
@@ -110,10 +110,10 @@ const Overviewpage = () => {
               </div>
             </div>
 
-            <p className="text-4xl  text-[#7E3F98] text-center font-medium pt-14 ">
+            <h2 className="text-4xl  text-[#7E3F98] text-center font-medium pt-14 ">
               SETTING THE STAGE
-            </p>
-            <p className="text-center font-semibold lg:px-40 pt-6">
+            </h2>
+            <h3 className="text-center font-semibold lg:px-40 pt-6">
               In the last decade, the combined efforts of the government,
               private sector, civil society, and international allies have
               driven the growth of the Indian economy. And the best part? The
@@ -121,7 +121,7 @@ const Overviewpage = () => {
               2024-25 and potentially doubling to a staggering USD 10 Trillion
               by 2030. But to keep this excitement going, we need to tackle
               challenges with creativity and teamwork.
-            </p>
+            </h3>
           </div>
         </div>
       </div>
@@ -277,9 +277,8 @@ const Overviewpage = () => {
 
         <div className="text-center pb-5  mt-10 text-white">
           <p className="text-xl lg:w-[38%] mx-auto">
-            Join us for an exciting and transformative event
-             that promises to spark ideas and drive
-            meaningful change
+            Join us for an exciting and transformative event that promises to
+            spark ideas and drive meaningful change
           </p>
         </div>
       </div>
