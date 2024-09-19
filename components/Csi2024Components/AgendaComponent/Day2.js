@@ -28,7 +28,7 @@ const Day2 = () => {
 
   return (
     <div>
-      <div className=" mb-10  ">
+      <div className=" mb-11  ">
         <table className=" text-sm font-semibold lg:w-[1320px] ">
           <thead className="">
             <tr className="flex lg:flex-col flex-row">
