@@ -29,7 +29,7 @@ const Day1 = () => {
   return (
     <div>
       <div className=" mb-10">
-        <table className=" text-sm font-semibold lg:w-[1320px] ">
+        <table className=" text-sm font-semibold lg:w-[1320px]  ">
           <thead className="">
             <tr className="flex lg:flex-col flex-row">
               <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[10%] bg-gradient-to-r from-[#2ecc71] to-[#3498db] flex flex-col items-center justify-center mx-1 ">

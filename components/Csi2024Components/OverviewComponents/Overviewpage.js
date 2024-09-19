@@ -10,7 +10,7 @@ const Overviewpage = () => {
       <div className="relative bg-[url('/images/csi_2024/CSI_2024_bg.png')] bg-cover bg-bottom bg-no-repeat w-full lg:h-[180vh] custom-container">
         <div className=" pt-5 top-[18%] px-6 lg:px-0">
           <div className="w-full h-full    lg:pt-44 lg:absolute top-0 start-0  ">
-            <div className="lg:px-80 lg:pt-10 ">
+            <div className="lg:w-3/6 mx-auto lg:pt-10 ">
               <Image
                 className=" object-cover w-full h-full "
                 src="/images/csi_2024/Catalysing_Social_Impact_2024_full.png"
@@ -20,7 +20,7 @@ const Overviewpage = () => {
               />
             </div>
 
-            <div className="lg:px-48 lg:pt-10">
+            <div className="lg:w-3/4 mx-auto lg:pt-10">
               <Image
                 className=" w-full h-full"
                 src="/images/csi_2024/CSI_Group.png"
@@ -113,7 +113,7 @@ const Overviewpage = () => {
             <h2 className="text-4xl  text-[#7E3F98] text-center font-medium pt-14 ">
               SETTING THE STAGE
             </h2>
-            <h3 className="text-center font-semibold lg:px-40 pt-6">
+            <h3 className="text-center  text-base lg:w-3/5 mx-auto font-semibold pt-6">
               In the last decade, the combined efforts of the government,
               private sector, civil society, and international allies have
               driven the growth of the Indian economy. And the best part? The
@@ -157,12 +157,12 @@ const Overviewpage = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto lg:p-0   p-4">
-          <h1 className="text-3xl text-center pt-10 lg:px-14">
+        <div className="container mx-auto lg:p-0   p-4 ">
+          <h1 className="text-3xl text-center pt-10 lg:w-3/4 mx-auto ">
             Catalysing Social Impact
-            <span className=" text-[#7E3F98] text-center">
-              is all about celebrating India’s achievements and finding
-              meaningful cross-sectoral opportunities
+            <span className="text-[#7E3F98] text-center">
+              &nbsp;is&nbsp;all about celebrating India’s achievements and
+              finding meaningful cross-sectoral opportunities
             </span>
           </h1>
 

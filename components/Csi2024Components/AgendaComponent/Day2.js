@@ -94,7 +94,7 @@ const Day2 = () => {
           </thead>
           <tbody className="bg-white ">
             <tr>
-              <td className="border border-gray-300 px-4 py-3 tetx-green-600">
+              <td className="border border-gray-300 px-4 py-3 text-green-600">
                 10:30-11:15
               </td>
               <td className="border border-gray-300 px-4 py-3">
