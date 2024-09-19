@@ -213,8 +213,10 @@ const Csi2019page = () => {
                     width={400}
                   />
                 </div>
-                <h3 className="text-4xl text-white lg:text-left">Challengers</h3>
-                <p className="mt-5 lg:text-left">
+                <h2 className="text-4xl text-white lg:text-left">
+                  Challengers
+                </h2>
+                <h3 className="mt-5 lg:text-left">
                   Challengers curates and hosts talks from visionaries
                   propelling social change. Through compelling narratives, these
                   speakers share innovative initiatives addressing pressing
@@ -222,7 +224,7 @@ const Csi2019page = () => {
                   sparking ideas and fostering a global community committed to
                   impactful change, creating an immersive and inspiring
                   experience for its audience.
-                </p>
+                </h3>
               </div>
             </div>
           </div>

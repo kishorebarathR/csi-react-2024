@@ -11,9 +11,9 @@ const Filmspage = () => {
 
         <p className="text-2xl mb-6">PRESENTS</p>
 
-        <h2 className="text-4xl font-bold text-[#7E3F98] mb-6">
+        <h3 className="text-4xl font-bold text-[#7E3F98] mb-6">
           THE BIG PICTURE FILM FESTIVAL
-        </h2>
+        </h3>
 
         <p className="max-w-2xl mx-auto text-gray-700">
           Welcome to the Centre for Strategic Communication for Public Health
@@ -29,11 +29,11 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               01
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Cotton&apos;s Hidden Voices:
               <br />
               Women&apos;s Voices
-            </h2>
+            </h3>
             <p className="mb-4">
               The movie throws light on the crucial role women play in the
               modern textile supply chain. Despite being an integral part of the
@@ -198,9 +198,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               04
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Where Springs Return…
-            </h2>
+            </h3>
 
             <p className="mb-4">
             &apos;Where Springs Return...&apos; is a social documentary film about Gram
@@ -229,9 +229,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               05
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Springs of Hope
-            </h2>
+            </h3>
             <p className="mb-4">
             &apos;Springs of Hope&apos; showcases the impact of the Swades Foundation&apos;s
               efforts in water, documenting the before and after of the
@@ -286,9 +286,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               06
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Slowing the Spread of Dengue Fever
-            </h2>
+            </h3>
 
             <p className="mb-4">
               In recent years, dengue has emerged as a pressing global health
@@ -327,9 +327,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               07
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Obsolete | Bhangaar
-            </h2>
+            </h3>
             <p className="mb-4">
               An elderly couple from Mumbai asks the President and Supreme Court
               of India for the right to die together. As they await an official
@@ -384,9 +384,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               08
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Dumpster Diving with Jaggery
-            </h2>
+            </h3>
             <p className="mb-4">
               With this documentary, the creators are attempting to take our
               viewers through the entire reutilization process of converting
@@ -415,10 +415,10 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               09
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Under the Indian Sky: Tales of Climate and Health - Part 1: Our
               Carers
-            </h2>
+            </h3>
             <p className="mb-4">
               Climate change is a public health crisis. This short film helps us
               see the impact of climate change on communities through the eyes
@@ -477,9 +477,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               10
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Impact of Climate Change on Sundarbans People
-            </h2>
+            </h3>
             <p className="mb-4">
               The documentary highlights the issues residents of Sundarban have
               been facing due to climate change. We see the community people
@@ -510,9 +510,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               11
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Economic Resilience
-            </h2>
+            </h3>
             <p className="mb-4">
               Pentakota, a coastal village in Puri, Odissa, is a microcosm of a
               community inextricably linked to the sea. Ten thousand families
@@ -573,9 +573,9 @@ const Filmspage = () => {
             <div className="bg-[#F5D47A] text-white font-bold py-1 px-3 inline-block mb-4">
               12
             </div>
-            <h2 className="text-[#7E3F98] text-2xl font-bold mb-4">
+            <h3 className="text-[#7E3F98] text-2xl font-bold mb-4">
               Beyond the Clinic: The Invest4Wellness Model at Rehti
-            </h2>
+            </h3>
             <p className="mb-4">
             &apos;Beyond the Clinic&apos; is a documentary exploring the transformative
               impact of the Invest4Wellness model on women in Rehti. The film
