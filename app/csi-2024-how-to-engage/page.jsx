@@ -4,7 +4,7 @@ import HowtoengageComponents from "@/components/HowtoengageComponents/Howtoengag
 import Seo from "@/components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 
-const page = () => {
+const Page = () => {
   const pathname = usePathname()
   const title = "CSI 2024 | CSI"
   const description =
@@ -24,4 +24,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -3,7 +3,7 @@ import React from "react"
 import Csi2024OverviewComponets from "@/components/Csi2024Components/OverviewComponents"
 import Seo from "@/components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
-const page = () => {
+const Page = () => {
   const pathname = usePathname()
   const title = "CSI 2024 | CSI"
   const description =
@@ -24,4 +24,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
