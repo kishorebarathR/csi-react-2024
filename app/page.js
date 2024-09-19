@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 import HomeComponents from "@/components/HomeComponents"
 import Seo from "@/components/SeoComponents/Seo"
@@ -8,7 +9,7 @@ const Page = () => {
   const title = "CSI"
   const description =
     "Catalysing Social Impact [CSI] is a living forum hosted by the Catalyst Group for thinkers, doers, and investors who come together to ignite positive changes in the field of social impact through strategic initiatives."
-  const path = `${pathname}` // Corrected template string usage
+  const path = `${pathname}`
   const metaImage = ""
 
   return (
