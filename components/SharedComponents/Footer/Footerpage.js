@@ -6,7 +6,7 @@ const Footerpage = () => {
   return (
     <>
     {/* DESKTOP VIEW */}
-<div class="bg-[#7E3F98] border-b border-white-500 pt-5 flex items-center justify-between hidden md:flex">
+<div class="bg-[#7E3F98] border-b border-white-500 pt-5 lg:flex items-center justify-between hidden md:flex">
   {/* Left side with image */}
   <div class="w-1/2">
     <Image
