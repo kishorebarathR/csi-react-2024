@@ -88,31 +88,36 @@ const Homepage = () => {
                   <p className="lg:p-5 text-5xl  bg-[#4B2361] text-white lg:me-10 mb-0 px-5 ">
                     New Delhi
                   </p>
+                 
                   <div className="text-end lg:me-14 lg:mt-5 lg:py-0 py-10 bg-[#4B2361]">
-                    {/* Mobile View */}
-                    <div className="lg:hidden text-left px-4 ">
-                      {" "}
-                      {/* Hide on large screens */}
-                      <Link
-                        href="csi-2024"
-                        className="inline-block focus:outline-none text-violet-600 font-normal rounded-3xl text-sm px-14 py-4 mb-14 "
-                      >
-                        View Details
-                      </Link>
-                    </div>
+  {/* Mobile View */}
+  <div className="lg:hidden text-left px-4">
+    {/* Hide on large screens */}
+    <Link
+      href="csi-2024"
+      className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 font-normal rounded-3xl text-sm px-14 py-4 mb-14"
+    >
+      View Details
+    </Link>
+  </div>
 
-                    {/* Desktop View */}
-                    <div className="hidden lg:block text-right ">
-                      {/* Hide on small screens */}
-                      <Link
-                        href="csi-2024"
-                        className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200  font-normal rounded-3xl text-sm px-14 py-4"
-                      >
-                        View Details
-                      </Link>
-                    </div>
-                  </div>
+  {/* Desktop View */}
+  <div className="hidden lg:block text-right">
+    {/* Hide on small screens */}
+    <Link
+      href="csi-2024"
+      className="inline-block focus:outline-none text-violet-600 bg-yellow-200 hover:bg-[#7e3f98] hover:text-yellow-200 font-normal rounded-3xl text-sm px-14 py-4"
+    >
+      View Details
+    </Link>
+  </div>
+</div>
+
+               
+               
                 </div>
+              
+              
               </div>
               <div className=" relative lg:ms-0 ms-52">
                 <Image

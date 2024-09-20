@@ -5,53 +5,53 @@ import React from "react"
 const Footerpage = () => {
   return (
     <>
-    {/* DESKTOP VIEW */}
-<div class="bg-[#7E3F98] border-b border-white-500 pt-5 lg:flex items-center justify-between hidden md:flex">
-  {/* Left side with image */}
-  <div class="w-1/2">
-    <Image
-      src="/images/logo-light (1).png"
-      alt="image description"
-      class="w-10/12 md:w-auto"
-      height={400}
-      width={400}
-    />
-  </div>
+      {/* DESKTOP VIEW */}
+      <div class="bg-[#7E3F98] border-b border-white-500 pt-5 lg:flex items-center justify-between hidden md:flex">
+        {/* Left side with image */}
+        <div class="w-1/2">
+          <Image
+            src="/images/logo-light (1).png"
+            alt="image description"
+            class="w-10/12 md:w-auto"
+            height={400}
+            width={400}
+          />
+        </div>
 
-  {/* Right side with text */}
-  <div class="flex-1 text-white pb-5 p-5 md:text-end">
-    <a
-      href="mailto:csi@catalysts.org"
-      class="hover:text-green-600 text-md"
-    >
-      csi2014@catalysts.org
-    </a>
-  </div>
-</div>
+        {/* Right side with text */}
+        <div class="flex-1 text-white pb-5 p-5 md:text-end">
+          <a
+            href="mailto:csi@catalysts.org"
+            class="hover:text-green-600 text-md"
+          >
+            csi2014@catalysts.org
+          </a>
+        </div>
+      </div>
 
-{/* MOBILE VIEW */}
-<div class="bg-[#7E3F98] border-b border-white-500 pt-5 flex flex-col md:flex-row items-center md:justify-between md:hidden">
-  {/* Left side with image */}
-  <div class="w-full md:w-1/2 flex justify-center md:justify-start">
-    <Image
-      src="/images/logo-light (1).png"
-      alt="image description"
-      class="w-10/12 md:w-auto"
-      height={400}
-      width={400}
-    />
-  </div>
+      {/* MOBILE VIEW */}
+      <div class="bg-[#7E3F98] border-b border-white-500 pt-5 flex flex-col md:flex-row items-center md:justify-between md:hidden">
+        {/* Left side with image */}
+        <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+          <Image
+            src="/images/logo-light (1).png"
+            alt="image description"
+            class="w-10/12 md:w-auto"
+            height={400}
+            width={400}
+          />
+        </div>
 
-  {/* Right side with text */}
-  <div class="w-full text-white pb-5 p-5 text-center md:text-end">
-    <a
-      href="mailto:csi@catalysts.org"
-      class="hover:text-green-600 text-md"
-    >
-      csi2014@catalysts.org
-    </a>
-  </div>
-</div>
+        {/* Right side with text */}
+        <div class="w-full text-white pb-5 p-5 text-center md:text-end">
+          <a
+            href="mailto:csi@catalysts.org"
+            class="hover:text-green-600 text-md"
+          >
+            csi2014@catalysts.org
+          </a>
+        </div>
+      </div>
 
       <div className="bg-[#7E3F98] px-10 text-center ">
         <nav className="">
