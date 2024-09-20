@@ -53,7 +53,7 @@ const Footerpage = () => {
         </div>
       </div>
 
-      <div className="bg-[#7E3F98] px-10 text-center ">
+      <div className="bg-[#7E3F98] px-10 text-center md:text-left">
         <nav className="">
           <div className="max-w-screen-xl mx-auto  violet">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
@@ -83,8 +83,8 @@ const Footerpage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full md:w-auto mb-4 md:mb-0  lg:mt-6 pb-4">
-                <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
+              <div className="w-full md:w-auto mb-4 md:mb-0  lg:mt-6 pb-4 ">
+                <ul className="font-medium flex flex-col md:flex-row md:space-x-8 ">
                   <li className="violet">
                     <p
                       className="block py-2 px-3 mt-1 text-md text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
@@ -94,7 +94,7 @@ const Footerpage = () => {
                     </p>
                     <Link
                       href="csi-2024"
-                      className="block py-2 px-3 lg:ms-1 mt-1 text-sm text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
+                      className="block py-2 px-3 lg:ms-1 mt-1 text-sm  text-white md:bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 md:dark:text-violet-500 hover:text-green-600"
                       aria-current="page"
                     >
                       Overview
