@@ -31,8 +31,8 @@ const Day1 = () => {
       <div className=" mb-10">
         <table className=" text-sm font-semibold lg:w-[1320px]  ">
           <thead className="">
-            <tr className="flex lg:flex-col flex-row ">
-              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[10%] bg-gradient-to-r from-[#2ecc71] to-[#3498db] flex flex-col items-center justify-center mx-1 ">
+            <tr className="flex lg:flex-col flex-row lg:ms-3 ">
+              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[10%] w-[15%] bg-gradient-to-r from-[#2ecc71] to-[#3498db] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
                   <Image
                     src="/images/agenda/clock.svg"
@@ -44,7 +44,7 @@ const Day1 = () => {
                 </div>
                 <span>TIME</span>
               </th>
-              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[60%] bg-gradient-to-r from-[#5DA7D6] to-[#8458B9] flex flex-col items-center justify-center mx-1 ">
+              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[60%] w-[30%] bg-gradient-to-r from-[#5DA7D6] to-[#8458B9] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
                   <Image
                     src="/images/agenda/event.svg"
@@ -56,7 +56,7 @@ const Day1 = () => {
                 </div>
                 <span>TOPIC</span>
               </th>
-              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[15%] bg-gradient-to-r from-[#B267B9] to-[#DE636C] flex flex-col items-center justify-center mx-1 ">
+              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[15%] w-[24%] bg-gradient-to-r from-[#B267B9] to-[#DE636C] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
                   <Image
                     src="/images/agenda/location1.svg"
@@ -68,7 +68,7 @@ const Day1 = () => {
                 </div>
                 <span>LOCATION</span>
               </th>
-              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[15%] bg-gradient-to-r from-[#F0B55F] to-[#F4D078] flex flex-col items-center justify-center mx-1 ">
+              <th className="p-4 rounded-xl text-white font-semibold text-lg lg:w-[15%] w-[20%] bg-gradient-to-r from-[#F0B55F] to-[#F4D078] flex flex-col items-center justify-center mx-1 ">
                 <div className=" flex items-center justify-center">
                   <Image
                     src="/images/agenda/brush.svg"
