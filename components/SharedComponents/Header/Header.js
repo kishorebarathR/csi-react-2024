@@ -2,12 +2,12 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-
+import { usePathname } from "next/navigation" // Import usePathname
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeLink, setActiveLink] = useState(null)
   const [activeSubLink, setActiveSubLink] = useState(null)
-
+  const pathname = usePathname() 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
@@ -28,13 +28,7 @@ const Header = () => {
     <>
       {/* <div className="z-10 container  mx-auto"> */}
       <div className="py-5 px-5 flex fixed inset-0 h-[6em] top-6 w-[94.5%] mx-auto rounded-lg bg-white justify-between">
-        <Link
-          href="/"
-          className={`block bg-white rounded-lg ${
-            activeLink === 0 ? "text-purple-700" : ""
-          }`}
-          onClick={() => handleLinkClick(0)}
-        >
+        <Link href="/" className="block bg-white rounded-lg">
           <Image
             className="w-full h-[58px]"
             src="/images/catalysing_logo (1).png"
@@ -49,17 +43,14 @@ const Header = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
               <div className="w-full md:w-auto">
                 <ul className="font-medium hidden md:flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                  <li className="bg-white">
-                    <Link
-                      href="/"
-                      className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
-                        activeLink === 0 ? "text-purple-700" : ""
-                      }`}
-                      onClick={() => handleLinkClick(0)}
-                    >
-                      Home
-                    </Link>
-                  </li>
+                  <Link
+                    href="/"
+                    className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
+                      pathname === "/" ? "text-purple-700" : ""
+                    }`}
+                  >
+                    Home
+                  </Link>
                   <li className="bg-white relative group">
                     <button
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-700 ${
@@ -73,31 +64,40 @@ const Header = () => {
                       <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-md shadow-lg">
                         <li>
                           <Link
-                            href="csi-2024"
+                            href="/csi-2024"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
-                              activeSubLink === 5 ? "text-purple-700" : ""
+                              pathname === "/csi-2024" || activeSubLink === 5
+                                ? "text-purple-700"
+                                : ""
                             }`}
                             onClick={() => handleSubLinkClick(5)}
                           >
                             Overview
                           </Link>
                         </li>
+
                         <li>
                           <Link
-                            href="csi-agenda"
+                            href="/csi-agenda"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
-                              activeSubLink === 6 ? "text-purple-700" : ""
+                              pathname === "/csi-agenda" || activeSubLink === 6
+                                ? "text-purple-700"
+                                : ""
                             }`}
                             onClick={() => handleSubLinkClick(7)}
                           >
                             Agenda
                           </Link>
                         </li>
+
                         <li>
                           <Link
-                            href="csi-2024-films"
+                            href="/csi-2024-films"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
-                              activeSubLink === 6 ? "text-purple-700" : ""
+                              pathname === "/csi-2024-films" ||
+                              activeSubLink === 6
+                                ? "text-purple-700"
+                                : ""
                             }`}
                             onClick={() => handleSubLinkClick(7)}
                           >
@@ -109,22 +109,22 @@ const Header = () => {
                   </li>
                   <li className="bg-white">
                     <Link
-                      href="csi-2019"
+                      href="/csi-2019"
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
-                        activeLink === 2 ? "text-purple-700" : ""
+                        pathname === "/csi-2019" ? "text-purple-700" : ""
                       }`}
-                      onClick={() => handleLinkClick(2)}
                     >
                       CSI 2019
                     </Link>
                   </li>
                   <li className="bg-white">
                     <Link
-                      href="csi-2024-how-to-engage"
+                      href="/csi-2024-how-to-engage"
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
-                        activeLink === 3 ? "text-purple-700" : ""
+                        pathname === "/csi-2024-how-to-engage"
+                          ? "text-purple-700"
+                          : ""
                       }`}
-                      onClick={() => handleLinkClick(3)}
                     >
                       How to Engage
                     </Link>
@@ -132,10 +132,7 @@ const Header = () => {
                   <li className="bg-white">
                     <Link
                       href="https://docs.google.com/forms/d/e/1FAIpQLScwwcEsK3tlih6udYZ1dU2WADxcCf846G6pf4K_qrEfGeYO-A/viewform"
-                      className={`block -py-2 -px-8focus:outline-none text-black bg-[#F3D479] hover:text-[#7e3f98]  font-normal rounded-3xl text-sm px-8 py-3 -mt-3  ${
-                        activeLink === 4 ? "text-purple-700" : ""
-                      }`}
-                      onClick={() => handleLinkClick(4)}
+                      className="block py-2 px-8 text-black bg-[#F3D479] hover:text-[#7e3f98] font-normal rounded-3xl text-sm"
                     >
                       Subscribe Now
                     </Link>

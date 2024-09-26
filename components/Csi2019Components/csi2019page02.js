@@ -317,18 +317,23 @@ const Csi2019page02 = () => {
                     </button>
                   </div>
 
-                  <div className="flex justify-center items-center h-full mt-5 ">
-                    <div className="flex flex-col lg:flex-row  ">
-                      <div className="w-full ">
-                        <video className="h-full w-full " autoPlay muted loop>
-                          <source
-                            src="/vedio/Homepage-vedio.mp4"
-                            type="video/mp4"
-                          />
-                        </video>
+                  <div className="flex justify-center items-center h-full mt-5">
+                      <div className="flex flex-col lg:flex-row  ">
+                        <div className="w-full ">
+                          <video
+                            className="h-full w-full lozad"
+                            autoPlay
+                            muted
+                            loop
+                          >
+                            <source
+                              src="/vedio/Homepage-vedio.mp4"
+                              type="video/mp4"
+                            />
+                          </video>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
                   <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                     <button
