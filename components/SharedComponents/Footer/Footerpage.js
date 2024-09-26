@@ -1,14 +1,14 @@
-'use client'
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import React from "react"
 
 const Footerpage = () => {
-  const currentPath = usePathname() 
+  const currentPath = usePathname()
 
-  const activeLinkClass = "text-green-600" 
-  const defaultLinkClass = "text-white hover:text-green-600" 
+  const activeLinkClass = "text-green-600"
+  const defaultLinkClass = "text-white hover:text-green-600"
 
   return (
     <>
@@ -27,7 +27,10 @@ const Footerpage = () => {
 
         {/* Right side with text */}
         <div className="flex-1 text-white pb-5 p-5 md:text-end">
-          <a href="mailto:csi@catalysts.org" className="hover:text-green-600 text-md">
+          <a
+            href="mailto:csi@catalysts.org"
+            className="hover:text-green-600 text-md"
+          >
             csi2014@catalysts.org
           </a>
         </div>
@@ -48,7 +51,10 @@ const Footerpage = () => {
 
         {/* Right side with text */}
         <div className="w-full text-white pb-5 p-5 text-center md:text-end">
-          <a href="mailto:csi@catalysts.org" className="hover:text-green-600 text-md">
+          <a
+            href="mailto:csi@catalysts.org"
+            className="hover:text-green-600 text-md"
+          >
             csi2014@catalysts.org
           </a>
         </div>
@@ -83,7 +89,9 @@ const Footerpage = () => {
                     <Link
                       href="/csi-2019"
                       className={`block py-2 px-3 ${
-                        currentPath === "/csi-2019" ? activeLinkClass : defaultLinkClass
+                        currentPath === "/csi-2019"
+                          ? activeLinkClass
+                          : defaultLinkClass
                       }`}
                       aria-current="page"
                     >
@@ -94,16 +102,18 @@ const Footerpage = () => {
               </div>
 
               {/* CSI 2024 Links */}
-              <div className="w-full md:w-auto mb-4 md:mb-0 lg:mt-6 pb-4">
+              <div className="w-full md:w-auto  md:mb-0 lg:mt-9 pb-4 ">
                 <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                   <li className="violet">
-                    <p className="block py-2 px-3 mt-1 text-md text-white">
+                    <p className="block  px-3  text-md text-white">
                       CSI 2024
                     </p>
                     <Link
                       href="/csi-2024"
-                      className={`block py-2 px-3 lg:ms-1 mt-1 text-sm ${
-                        currentPath === "/csi-2024" ? activeLinkClass : defaultLinkClass
+                      className={`block py-1 px-3 lg:ms-1  text-sm ${
+                        currentPath === "/csi-2024"
+                          ? activeLinkClass
+                          : defaultLinkClass
                       }`}
                       aria-current="page"
                     >
@@ -111,8 +121,10 @@ const Footerpage = () => {
                     </Link>
                     <Link
                       href="/csi-agenda"
-                      className={`block py-2 px-3 lg:ms-2 mt-1 text-sm ${
-                        currentPath === "/csi-agenda" ? activeLinkClass : defaultLinkClass
+                      className={`block py-1 px-3 lg:ms-2  text-sm ${
+                        currentPath === "/csi-agenda"
+                          ? activeLinkClass
+                          : defaultLinkClass
                       }`}
                       aria-current="page"
                     >
@@ -120,8 +132,10 @@ const Footerpage = () => {
                     </Link>
                     <Link
                       href="/csi-2024-films"
-                      className={`block py-2 px-3 lg:ms-2 mt-1 text-sm ${
-                        currentPath === "/csi-2024-films" ? activeLinkClass : defaultLinkClass
+                      className={`block py-1 px-3 lg:ms-2  text-sm ${
+                        currentPath === "/csi-2024-films"
+                          ? activeLinkClass
+                          : defaultLinkClass
                       }`}
                       aria-current="page"
                     >
@@ -138,7 +152,9 @@ const Footerpage = () => {
                     <Link
                       href="/csi-2024-how-to-engage"
                       className={`block py-2 px-3 ${
-                        currentPath === "/csi-2024-how-to-engage" ? activeLinkClass : defaultLinkClass
+                        currentPath === "/csi-2024-how-to-engage"
+                          ? activeLinkClass
+                          : defaultLinkClass
                       }`}
                       aria-current="page"
                     >
