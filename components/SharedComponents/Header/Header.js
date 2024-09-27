@@ -75,7 +75,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/csi-2024"
-                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
+                            className={`block py-2 px-4  hover:bg-gray-300 hover:text-purple-500 text-gray-800 ${
                               pathname === "/csi-2024" || activeSubLink === 5
                                 ? "text-purple-700"
                                 : ""
@@ -88,7 +88,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/csi-agenda"
-                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
+                            className={`block py-2 px-4 hover:bg-gray-300 hover:text-purple-500 text-gray-800 ${
                               pathname === "/csi-agenda" || activeSubLink === 6
                                 ? "text-purple-700"
                                 : ""
@@ -101,7 +101,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/csi-2024-films"
-                            className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
+                            className={`block py-2 px-4 hover:bg-gray-300 hover:text-purple-500  text-gray-800 ${
                               pathname === "/csi-2024-films" ||
                               activeSubLink === 7
                                 ? "text-purple-700"
