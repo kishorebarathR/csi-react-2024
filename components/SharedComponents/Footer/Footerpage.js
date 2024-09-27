@@ -1,14 +1,11 @@
-"use client"
-import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import React from "react"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const Footerpage = () => {
-  const currentPath = usePathname()
-
-  const activeLinkClass = "text-green-600"
-  const defaultLinkClass = "text-white hover:text-green-600"
+  const defaultLinkClass = "text-white hover:text-green-500";
 
   return (
     <>
@@ -27,10 +24,7 @@ const Footerpage = () => {
 
         {/* Right side with text */}
         <div className="flex-1 text-white pb-5 p-5 md:text-end">
-          <a
-            href="mailto:csi@catalysts.org"
-            className="hover:text-green-600 text-md"
-          >
+          <a href="mailto:csi@catalysts.org" className="hover:text-green-600 text-md">
             csi2014@catalysts.org
           </a>
         </div>
@@ -51,10 +45,7 @@ const Footerpage = () => {
 
         {/* Right side with text */}
         <div className="w-full text-white pb-5 p-5 text-center md:text-end">
-          <a
-            href="mailto:csi@catalysts.org"
-            className="hover:text-green-600 text-md"
-          >
+          <a href="mailto:csi@catalysts.org" className="hover:text-green-600 text-md">
             csi2014@catalysts.org
           </a>
         </div>
@@ -69,13 +60,7 @@ const Footerpage = () => {
               <div className="w-full md:w-auto mb-4 md:mb-0 lg:-mt-16">
                 <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                   <li className="violet">
-                    <Link
-                      href="/"
-                      className={`block py-2 px-3 ${
-                        currentPath === "/" ? activeLinkClass : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <Link href="/" className={`block py-2 px-3 ${defaultLinkClass}`} aria-current="page">
                       Home
                     </Link>
                   </li>
@@ -86,15 +71,7 @@ const Footerpage = () => {
               <div className="w-full md:w-auto mb-4 md:mb-0 lg:-mt-16">
                 <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                   <li className="violet">
-                    <Link
-                      href="/csi-2019"
-                      className={`block py-2 px-3 ${
-                        currentPath === "/csi-2019"
-                          ? activeLinkClass
-                          : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <Link href="/csi-2019" className={`block py-2 px-3 ${defaultLinkClass}`} aria-current="page">
                       CSI 2019
                     </Link>
                   </li>
@@ -102,43 +79,17 @@ const Footerpage = () => {
               </div>
 
               {/* CSI 2024 Links */}
-              <div className="w-full md:w-auto  md:mb-0 lg:mt-9 pb-4 ">
+              <div className="w-full md:w-auto md:mb-0 lg:mt-9 pb-4">
                 <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                   <li className="violet">
-                    <p className="block  px-3  text-md text-white">
-                      CSI 2024
-                    </p>
-                    <Link
-                      href="/csi-2024"
-                      className={`block py-1 px-3 lg:ms-1  text-sm ${
-                        currentPath === "/csi-2024"
-                          ? activeLinkClass
-                          : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <p className="block px-3 text-md text-white">CSI 2024</p>
+                    <Link href="/csi-2024" className={`block py-1 px-3 lg:ms-1 text-sm ${defaultLinkClass}`} aria-current="page">
                       Overview
                     </Link>
-                    <Link
-                      href="/csi-agenda"
-                      className={`block py-1 px-3 lg:ms-2  text-sm ${
-                        currentPath === "/csi-agenda"
-                          ? activeLinkClass
-                          : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <Link href="/csi-agenda" className={`block py-1 px-3 lg:ms-2 text-sm ${defaultLinkClass}`} aria-current="page">
                       Agenda
                     </Link>
-                    <Link
-                      href="/csi-2024-films"
-                      className={`block py-1 px-3 lg:ms-2  text-sm ${
-                        currentPath === "/csi-2024-films"
-                          ? activeLinkClass
-                          : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <Link href="/csi-2024-films" className={`block py-1 px-3 lg:ms-2 text-sm ${defaultLinkClass}`} aria-current="page">
                       Films
                     </Link>
                   </li>
@@ -149,15 +100,7 @@ const Footerpage = () => {
               <div className="w-full md:w-auto mb-4 md:mb-0 lg:-mt-16">
                 <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
                   <li className="violet">
-                    <Link
-                      href="/csi-2024-how-to-engage"
-                      className={`block py-2 px-3 ${
-                        currentPath === "/csi-2024-how-to-engage"
-                          ? activeLinkClass
-                          : defaultLinkClass
-                      }`}
-                      aria-current="page"
-                    >
+                    <Link href="/csi-2024-how-to-engage" className={`block py-2 px-3 ${defaultLinkClass}`} aria-current="page">
                       How to Engage
                     </Link>
                   </li>
@@ -170,7 +113,7 @@ const Footerpage = () => {
                   <li className="violet">
                     <Link
                       href="https://docs.google.com/forms/d/e/1FAIpQLScwwcEsK3tlih6udYZ1dU2WADxcCf846G6pf4K_qrEfGeYO-A/viewform"
-                      className="block py-2 px-3 text-white  rounded hover:text-green-600"
+                      className="block py-2 px-3 text-white rounded hover:text-green-500"
                       aria-current="page"
                     >
                       Subscribe Now
@@ -183,7 +126,7 @@ const Footerpage = () => {
         </nav>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footerpage
+export default Footerpage;
