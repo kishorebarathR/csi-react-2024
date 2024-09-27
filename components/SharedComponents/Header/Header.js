@@ -2,31 +2,36 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation" // Import usePathname
+import { usePathname } from "next/navigation"
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeLink, setActiveLink] = useState(null)
   const [activeSubLink, setActiveSubLink] = useState(null)
-  const pathname = usePathname() 
+  const pathname = usePathname()
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
   const handleLinkClick = (index) => {
-    setActiveLink(index)
+    if (activeLink === index) {
+      setActiveLink(null)
+    } else {
+      setActiveLink(index)
+    }
     setActiveSubLink(null)
-    setIsMenuOpen(false)
+    setIsMenuOpen(false) // Close the mobile menu when a link is clicked
   }
 
   const handleSubLinkClick = (linkIndex, subLinkIndex) => {
-    setActiveLink(linkIndex)
+    setActiveLink(null)
     setActiveSubLink(subLinkIndex)
-    setIsMenuOpen(false)
+    setIsMenuOpen(false) // Close the mobile menu when a sublink is clicked
   }
 
   return (
     <>
-      {/* <div className="z-10 container  mx-auto"> */}
       <div className="py-5 px-5 flex fixed inset-0 h-[6em] top-6 w-[94.5%] mx-auto rounded-lg bg-white justify-between">
         <Link href="/" className="block bg-white rounded-lg">
           <Image
@@ -48,18 +53,23 @@ const Header = () => {
                     className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                       pathname === "/" ? "text-purple-700" : ""
                     }`}
+                    onClick={() => handleLinkClick(null)} // Close any open submenu
                   >
                     Home
                   </Link>
+
+                  {/* Main menu with submenu */}
                   <li className="bg-white relative group">
                     <button
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-700 ${
-                        activeLink === 1 ? "text-purple-700" : ""
+                        activeLink === 1 ? "null" : ""
                       }`}
                       onClick={() => handleLinkClick(1)}
                     >
                       CSI 2024
                     </button>
+
+                    {/* Show submenu if the link is active */}
                     {activeLink === 1 && (
                       <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-md shadow-lg">
                         <li>
@@ -70,12 +80,11 @@ const Header = () => {
                                 ? "text-purple-700"
                                 : ""
                             }`}
-                            onClick={() => handleSubLinkClick(5)}
+                            onClick={() => handleSubLinkClick(1, 5)}
                           >
                             Overview
                           </Link>
                         </li>
-
                         <li>
                           <Link
                             href="/csi-agenda"
@@ -84,22 +93,21 @@ const Header = () => {
                                 ? "text-purple-700"
                                 : ""
                             }`}
-                            onClick={() => handleSubLinkClick(7)}
+                            onClick={() => handleSubLinkClick(1, 6)}
                           >
                             Agenda
                           </Link>
                         </li>
-
                         <li>
                           <Link
                             href="/csi-2024-films"
                             className={`block py-2 px-4 hover:text-purple-700 text-gray-800 ${
                               pathname === "/csi-2024-films" ||
-                              activeSubLink === 6
+                              activeSubLink === 7
                                 ? "text-purple-700"
                                 : ""
                             }`}
-                            onClick={() => handleSubLinkClick(7)}
+                            onClick={() => handleSubLinkClick(1, 7)}
                           >
                             Films
                           </Link>
@@ -107,12 +115,15 @@ const Header = () => {
                       </ul>
                     )}
                   </li>
+
+                  {/* Other main menu links */}
                   <li className="bg-white">
                     <Link
                       href="/csi-2019"
                       className={`block -py-2 -px-8 hover:text-purple-700 text-gray-900 rounded bg-white md:border-0 ${
                         pathname === "/csi-2019" ? "text-purple-700" : ""
                       }`}
+                      onClick={() => handleLinkClick(null)} // Close any open submenu
                     >
                       CSI 2019
                     </Link>
@@ -125,6 +136,7 @@ const Header = () => {
                           ? "text-purple-700"
                           : ""
                       }`}
+                      onClick={() => handleLinkClick(null)} // Close any open submenu
                     >
                       How to Engage
                     </Link>
@@ -139,6 +151,7 @@ const Header = () => {
                   </li>
                 </ul>
 
+                {/* Mobile menu toggle */}
                 <button
                   className="block md:hidden"
                   onClick={toggleMenu}
@@ -176,7 +189,6 @@ const Header = () => {
                     </svg>
                   )}
                 </button>
-
                 <div
                   className={`fixed top-0 left-0 h-full w-full max-w-md bg-white shadow-lg transform ${
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -304,7 +316,6 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      {/* </div> */}
     </>
   )
 }
