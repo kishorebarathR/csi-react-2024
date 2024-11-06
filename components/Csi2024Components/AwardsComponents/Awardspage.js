@@ -6,7 +6,7 @@ const Awardspage = () => {
     <>
       <div>
         <div className="relative bg-[url('/images/awards/bg-img.png')] bg-cover bg-bottom bg-no-repeat w-full h-[180vh]">
-          <p className="absolute pt-5 top-[18%] left-1/2 transform -translate-x-1/2 text-center text-white font-bold text-4xl lg:text-3xl">
+          <p className="absolute pt-6 top-[18%] left-1/2 transform -translate-x-1/2 text-center text-white font-bold text-4xl lg:text-3xl">
             Innovation for Transformation Awards
           </p>
 
